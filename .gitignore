@@ -1,0 +1,11 @@
+vendor
+.env.test
+.env
+public/mp3/
+var
+public/images
+public/media
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###

@@ -73,7 +73,7 @@ class UserTest extends TestCase
 
 
         $this->assertEquals($emailVariables['username'], 'Administrateur');
-        $this->assertEquals($emailVariables['email'], 'arnaudduthoit@hotmail.com');
+        $this->assertEquals($emailVariables['email'], 'contact@jumperpich.com');
 
     }
 }
