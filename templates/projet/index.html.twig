@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Jumperpich | Mixes  {% endblock %}
+
+
+
+{% block body %}
+
+
+    <div class="container-fluid pt-4 js-filter main">
+
+
+        <div id="loading">
+            <img src="{{ asset('pictures/loader.gif') }}" alt="Website Loader">
+        </div>
+
+        <div class="container-fluid mt-4">
+
+            <div id="podcast" class="parallax-one"
+                 style="background: #000 url('{{ asset('pictures/parallax3.jpg') }}') center no-repeat">
+                <div class="quote1-pattern" id="parallax-one"
+                     style="background: url('{{ asset('pictures/services-banner.png') }}');">
+                </div>
+                <div class="row m-0">
+                    <div>
+                        <h1 class="parallax-title"><img src="{{ asset('pictures/podcasts.PNG') }}" alt="Podcast_Banner">
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mt-4">
+
+                <div class="mx-4 my-4" id="filter">
+
+                    <div class="row">
+                        <div class="col-lg-12 col-xl-12 mb-4">
+                            {% include 'projet/_filter.html.twig' with {form:form} only %}
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-xl-12">
+
+                            <div class="row text-center js-filter-content" id="mixes">
+
+                                {% if projets.getTotalItemCount() is same as (0) %}
+                                    <div class="container mt-4">
+                                    <h3 style="color:black">Désolé aucun mix ne correspond à votre recherche ...</h3>
+                                    </div>
+                                {% endif %}
+
+                                {% include 'projet/_projets.html.twig' %}
+
+
+
+                            </div>
+
+                            <div class="js-filter-pagination d-flex justify-content-center">
+                                {% include 'projet/_pagination.html.twig' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

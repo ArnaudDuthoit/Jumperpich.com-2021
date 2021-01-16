@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion | Jumperpich {% endblock %}
+
+{% block body %}
+
+
+    <style>
+
+
+
+
+    </style>
+
+    <div class="main" style="background: #000 url('{{ asset('pictures/login.jfif') }}') center no-repeat fixed">
+
+        <div class="container mt-4 text-center">
+
+            <div class="d-flex justify-content-center">
+
+                <div class="box">
+                    <h2>Login</h2>
+                    <form action="{{ path('security_login') }}" method="post">
+
+                        <!-- fake fields are a workaround for chrome autofill getting the wrong fields -->
+                        <input style="display:none" type="text" name="fakeusernameremembered"/>
+                        <input style="display:none" type="password" name="fakepasswordremembered"/>
+
+                        <div class="inputBox">
+                            <input required name="_username" type="text" value="{{ last_username }}">
+                            <label>Username</label>
+                        </div>
+                        <div class="inputBox">
+                            <input required name="_password" type="password" autocomplete="new-password">
+                            <label>Password</label>
+                        </div>
+                        <input name="Submit" value="Login" type="submit">
+                    </form>
+                </div>
+
+
+                <!--
+            <div class="container">
+                <div class="wrapper d-flex justify-content-center">
+                    <form action="{{ path('security_login') }}" method="post" id="login_form" class="form-signin">
+                        <h3 class="form-signin-heading">Welcome Back! Please Sign In</h3>
+                        <hr class="colorgraph">
+                        <br>
+                        <input placeholder="Adresse mail" required name="_username" type="text"
+                               value="{{ last_username }}" class="form-control" autofocus="">
+                        <input placeholder="Mot de passe" required name="_password" type="password"
+                               class="form-control">
+                        <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit">Login
+                        </button>
+                    </form>
+                </div>
+            </div> -->
+
+
+                {% if error %}
+                    <div class="fixed-top alert alert-danger alert-dismissible fade show col-md-4 col-md-offset-4"
+                         align="center" role="alert">
+                        <strong>Erreur !</strong> {{ error.messageKey | trans(error.messagedata, 'security') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

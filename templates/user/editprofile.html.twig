@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+    <div class="container-fluid">
+
+        <div id="loading">
+            <img src="{{ asset('pictures/loader.gif') }}" alt="Website Loader">
+        </div>
+
+
+        <div class="container main">
+
+
+            <!-- Vertical navbar -->
+            {{ include('vertical_nav.html.twig') }}
+            <!-- End vertical navbar -->
+            <!-- Page content holder -->
+
+            <div class="page-content p-5" id="content">
+
+                {% for message in app.flashes('success') %}
+                    <div class="text-center fixed-bottom alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Succès !</strong> {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+                {% for message in app.flashes('error') %}
+                    <div class="text-center fixed-bottom alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>Erreur !</strong> {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+
+
+                <h6 class="text-center "><abbr> Modifier mes informations</abbr></h6>
+
+
+                <div class="container mt-4 pt-4 pb-4 text-dark shadow rounded">
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    <button class="btn btn__custom">Modifier</button>
+                    {{ form_end(form) }}
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

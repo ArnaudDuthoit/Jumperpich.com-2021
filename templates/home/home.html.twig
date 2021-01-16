@@ -1,0 +1,252 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Jumperpich | Jumperpich.com  {% endblock %}
+
+
+{% block body %}
+
+    <div class="container-fluid main">
+
+
+        <div id="loading">
+            <img src="{{ asset('pictures/loader.gif') }}" alt="Website Loader">
+        </div>
+
+
+        {% for message in app.flashes('notice') %}
+            <div class="fixed-bottom alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Warning !</strong> {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+        {% for message in app.flashes('success') %}
+            <div class="fixed-bottom alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Succès !</strong> {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+
+        <header style="background: #000 url('{{ asset('pictures/Background_header_webp.webp') }}') center no-repeat fixed">
+
+            <h1>{% trans %}Bienvenue sur Jumperpich.com{% endtrans %}</h1>
+            <p class="h5">Harddance , EDM & Future House podcasts.</p>
+
+            <a href="{{ path('projet.index') }}" class="mt-4 btn btn__custom">
+                {% trans %}TOUS LES PODCASTS{% endtrans %}</a>
+
+        </header>
+
+        <div id="podcast" class="parallax-one mt-4"
+             style="background: #000 url('{{ asset('pictures/parallax3_webp.webp') }}') center no-repeat fixed">
+            <div class="quote1-pattern" id="parallax-one"
+                 style="background: url('{{ asset('pictures/services-banner.png') }}');">
+
+            </div>
+            <div class="row m-0">
+                <div>
+                    <h1 class="parallax-title"><img src="{{ asset('pictures/podcasts_webp.webp') }}"
+                                                    alt="Podcast_Banner"></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4 py-4 text-center" id="recent">
+
+            <h6><abbr>{% trans %}Les plus récents{% endtrans %}</abbr></h6>
+
+            <div class="row my-4 pt-4 d-flex flex-wrap m15">
+
+                {% for projet in last %}
+
+                    <article class="mix col-12 col-md-6 col-lg-4 col-xl-4 article">
+
+                        <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                           aria-label="Read more about {{ projet.title }}">
+
+                            <figure class="d-block figure">
+                                <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                   aria-label="Read more about {{ projet.title }}">
+
+                                    <img class="image w-100 h-auto" {% if projet.filename %} src="{{ vich_uploader_asset(projet, 'imageFile') | imagine_filter('thumb') }}"
+                                    {% else %} src="{{ 'images/projets/empty.jpg' | imagine_filter('thumb') }}"
+                                    {% endif %} alt="thumb_{{ projet.title }}">
+
+                                    <div class="middle">
+                                        <i class="far fa-play-circle text"></i>
+                                    </div>
+                                </a>
+
+                                {% for tag in projet.tags %}
+                                    <div class="tag-top">
+                                        <div class="name_tag">{{ tag.name }}</div>
+                                    </div>
+                                {% endfor %}
+
+                            </figure>
+
+                        </a>
+
+                        <div class="info infos">
+
+                            <div class="info__content d-flex align-items-center w-100">
+                                <h1 class="mt-0 pt-0 mb-0 text-uppercase flex-grow-1" style="font-size: 1rem">
+                                    <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                       aria-label="Read more about {{ projet.title }}">{{ projet.title }}</a>
+                                </h1>
+
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="{{ path('projet.index') }}" class="btn btn__custom">
+                    {% trans %}VOIR TOUT{% endtrans %}</a>
+            </div>
+        </div>
+
+        <div class="container my-4 py-4 text-center" id="popular">
+
+            <h6><abbr>{% trans %}Les plus populaires{% endtrans %}</abbr></h6>
+
+            <div class="row my-4 pt-4 flex-wrap m15">
+
+                {% for projet in views %}
+
+                    <article class="mix col-12 col-md-6 col-lg-4 col-xl-4 article">
+
+                        <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                           aria-label="Read more about {{ projet.title }}">
+
+                            <figure class="d-block figure">
+                                <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                   aria-label="Read more about {{ projet.title }}">
+
+                                    <img class="image w-100 h-auto" {% if projet.filename %} src="{{ vich_uploader_asset(projet, 'imageFile') | imagine_filter('thumb') }}"
+                                    {% else %} src="{{ 'images/projets/empty.jpg' | imagine_filter('thumb') }}"
+                                    {% endif %} alt="thumb_{{ projet.title }}">
+
+                                    <div class="middle">
+                                        <i class="far fa-play-circle text"></i>
+                                    </div>
+                                </a>
+
+                                {% for tag in projet.tags %}
+                                <div class="tag-top">
+                                    <div class="name_tag">{{ tag.name }}</div>
+                                    {% endfor %}
+                                </div>
+
+                            </figure>
+
+                        </a>
+
+                        <div class="info infos">
+
+                            <div class="info__content d-flex align-items-center w-100">
+                                <h1 class="mt-0 pt-0 mb-0 text-uppercase flex-grow-1" style="font-size: 1rem">
+                                    <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                       aria-label="Read more about {{ projet.title }}">{{ projet.title }}</a>
+                                </h1>
+                            </div>
+                        </div>
+                    </article>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="{{ path('projet.index') }}" class="btn btn__custom">
+                    {% trans %}VOIR TOUT{% endtrans %}</a>
+            </div>
+        </div>
+
+
+        <div id="podcast" class="parallax-one mt-4"
+             style="background: #000 url('{{ asset('pictures/parallax3_webp.webp') }}') center no-repeat fixed">
+            <div class="quote1-pattern" id="parallax-one"
+                 style="background: url('{{ asset('pictures/services-banner.png') }}');">
+
+            </div>
+            <div class="row m-0">
+                <div>
+                    <h1 class="parallax-title"><img src="{{ asset('pictures/Newsletter.png') }}"
+                                                    alt="Newsletter_Banner"></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4 py-4 text-center" id="newsletter">
+
+            <div class="pt-4">
+                <div class="text-dark">
+                    <h6><abbr>{% trans %}POUR S'INSCRIRE{% endtrans %}</abbr></h6>
+                </div>
+
+                <!-- Begin Mailchimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{background:#f2f2f2;color: black; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup" class="p-4">
+                    <form action="https://jumperpich.us2.list-manage.com/subscribe/post?u=258cf984ef20b0376805f362f&amp;id=1aa0ed8c33" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_258cf984ef20b0376805f362f_1aa0ed8c33" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="{% trans %}S'inscrire{% endtrans %}" name="subscribe" id="mc-embedded-subscribe" class="btn btn__custom m-0"></div>
+                        </div>
+                    </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+
+            </div>
+        </div>
+
+
+        <div class="container my-4 py-4 text-center" id="social">
+
+            <h6><abbr>SOCIAL MEDIAL</abbr></h6>
+
+            <div class="my-4 pt-4">
+
+                <div class="text-center">
+
+                    <div class="logo-social"><a href="https://www.facebook.com/JumperpichMusic" target="blank"><img
+                                    src="{{ asset('pictures/facebook.jpg') }}" style="width:87%" alt="Facebook"></a>
+                    </div>
+
+                    <div class="logo-social"><a href="https://www.youtube.com/user/JumperPichMusic" target="blank"><img
+                                    src="{{ asset('pictures/youtube.jpg') }}" style="width:87%" alt="YouTube"></a></div>
+
+                    <div class="logo-social"><a href="https://soundcloud.com/jumperpich" target="blank"><img
+                                    src="{{ asset('pictures/soundcloud.jpg') }}" style="width:87%" alt="Soundcloud"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+{% endblock %}

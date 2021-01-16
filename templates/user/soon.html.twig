@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <div class="container pt-4">
+
+        <h6><abbr>ANNONCE PROCHAIN MIX</abbr></h6>
+
+        <div class="container mt-4">
+        {{ form_start(form) }}
+        {% for message in app.flashes('warning') %}
+            <div class="text-center fixed-bottom alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Warning !</strong> {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endfor %}
+
+        {{ form_widget(form) }}
+
+        <button class="btn btn__custom">Annoncer</button>
+        {{ form_end(form) }}
+    </div>
+
+
+
+    </div>
+
+
+{% endblock %}

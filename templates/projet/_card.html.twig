@@ -1,0 +1,39 @@
+<article class="mix col-12 col-md-6 col-lg-3 col-xl-3 article" id="card-{{ projet.id }}">
+
+    <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+       aria-label="Read more about {{ projet.title }}">
+
+        <figure class="d-block figure">
+            <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+               aria-label="Read more about {{ projet.title }}">
+
+                <img class="image w-100 h-auto" {% if projet.filename %} src="{{ vich_uploader_asset(projet, 'imageFile') | imagine_filter('thumb') }}"
+                {% else %} src="{{ 'images/projets/empty.jpg' | imagine_filter('thumb') }}"
+                {% endif %} alt="thumb_{{ projet.title }}">
+
+                <div class="middle">
+                    <i class="far fa-play-circle text"></i>
+                </div>
+            </a>
+            {% for tag in projet.tags %}
+            <div class="tag-top">
+                <div class="name_tag">{{ tag.name }}</div>
+                {% endfor %}
+            </div>
+
+        </figure>
+
+    </a>
+
+    <div class="info infos">
+
+                <div class="info__content d-flex align-items-center w-100">
+                    <h1 class="mt-0 pt-0 mb-0 text-uppercase flex-grow-1" style="font-size: 1rem">
+                        <a href="{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                           aria-label="Read more about {{ projet.title }}">{{ projet.title }}</a>
+                    </h1>
+
+                </div>
+            </div>
+
+</article>

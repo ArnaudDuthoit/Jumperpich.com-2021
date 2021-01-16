@@ -1,0 +1,96 @@
+## Base ##
+Nous utilisons les cookies sur le site pour vous donner la meilleure experience de navigation possible: We use cookies in this website to give you the best experience on our site.
+Plus d'infos: More Infos
+
+
+## Home.html.twig + header.html.twig ##
+
+BIENVENUE : WELCOME
+Mises à jours du site: Update's schedule
+Me contacter: Contact me
+Les plus récents: Most Recent
+Les plus populaires: Most Popular
+VOIR TOUT: VIEW ALL
+ACCUEIL: HOME
+S'inscrire: Subscribe
+POUR S'INSCRIRE: SUBSCRIBE
+
+## show.html.twig ##
+
+Téléchargement: Download
+Télécharger: Download
+Partager: Share
+Lire: Play
+
+## newsletter.html.twig ##
+
+Et bien d'autres: And other stuff
+Ce formulaire vous permet de vous abonner à la newsletter gratuitement: This form allow you to subscribe to the Newsletter for free
+ABONNEZ VOUS ET RECEVEZ: SUBSCRIBE AND GET
+Des liens vers mes découvertes et titres favoris du moment!: Links to my favorites tracks of the moment!
+En validant votre inscription, vous acceptez explicitement l’utilisation de vos données personnelles à l’usage exclusif du traitement de votre demande soumise via ce formulaire: By validating your registration, you explicitly agree to the use of your personal data for the exclusive use of processing your request submitted via this form
+Votre adresse de messagerie est uniquement utilisée pour vous envoyer la lettre d’actualité ainsi que des informations concernant mes activités. Vous pouvez à tout moment utiliser le lien de désabonnement intégré dans la newsletter: Your email address is only used to send you the newsletter and information about my activities. You can use the unsubscribe link integrated in the newsletter at any time
+
+## footer.html.twig
+
+Tous droits réservés.: All rights reserved.
+Désign, Développement & Création par : Designed, Developed & Created by
+Mentions Legales: Legal Notice
+RGPD: GDPR
+FAQ: Q&A
+
+## index.html.twig ##
+
+TOUT: ALL
+Aucun resultat trouvé pour: No result found for
+dans la catégorie: in the category
+Rechercher: Search
+Titre du mix: Name of the mix
+Trouve ton podcast: Find your podcast
+Rechercher un artiste, une track, un titre de mix: Search for an artist, a track, a mix
+
+## meta tags ##
+
+Bienvenue sur Jumperpich.com: Welcome to Jumperpich.com
+TOUS LES PODCASTS: ALL PODCASTS
+
+## contact_finish ##
+
+Formulaire envoyé: Form sent
+Merci ! J'ai bien reçu ton message: Thanks you ! I received your message
+Je t'ai envoyé un mail de confirmation: I sent you a confirmation email
+Retourner à l'accueil: Back to the homepage
+
+
+## ranking + most recent ##
+
+Les plus Populaires : Most popular
+Les plus Récents: Most recents
+Retour : Back
+
+## contact ##
+
+Nom: Name
+Email: Email address
+Objet: Subject
+Message: Message
+Envoyer: Send
+Formulaire de contact: Contact form
+ICI: HERE
+Les informations envoyées par le biais de ce formulaire sont enregistrées dans un fichier informatisé pour traiter votre demande. Elles ne seront en aucun cas cédées à des tiers. Votre adresse email sera conservée uniquement durant le délai de ma réponse. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier.Consultez ma politique en matière de vie privée pour en savoir plus en cliquant: The information sent through this form are saved in a computer file to process your request.In no case they will be sold to a third parties. Your email address will be kept only during the timeframe of my answer.In accordance with the law "IT and liberties", you can exercise your right of access to your data and have them rectifier.Consult our privacy policy to know more by clicking
+Ce formulaire vous permet de me contacter.: This form allow you to contact me.
+C’est le bon endroit pour me soumettre une idée d’amélioration par exemple.: That's the good place if you want to submit me your idea
+Pour toutes les questions relatives au Site n’hésitez pas à consulter: A question about the site ? Go to the
+la page FAQ.: Q&A page
+
+Veuillez entrer votre nom ici: Enter your name here
+Veuillez entrer votre adresse mail ici: Enter your email adress here
+Veuillez entrer l'objet de votre message ici: Enter the subject of your message here
+Veuillez entrer votre message ici: Enter your message here
+Veuillez écrire le code de sécurité suivant: Please enter this following security code
+Veuillez entrer le code ici: Enter the security code here
+
+## RGPD ##
+
+Réglement général de la Protection des Données: General Regulation of Data Protection
+Mentions Légales: Legal Notice

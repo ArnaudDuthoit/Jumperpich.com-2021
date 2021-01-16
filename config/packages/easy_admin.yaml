@@ -1,0 +1,105 @@
+easy_admin:
+    site_name: '<em>ADMINISTRATION</em>'
+    design:
+        menu:
+            - { label: 'Site'}
+            - { label: 'Homepage', route: 'home', icon: 'home' , target: '_blank'}
+            - { label: 'Administration Mixes'}
+            - { entity: 'Mixes', label: 'Mixes', default: true ,icon: 'music' }
+            - { entity: 'Tag', label: 'Tags', icon: 'tag' }
+            - { label: 'Messages'}
+            - { entity: 'Contact', label: 'Messages reçus', icon: 'envelope' }
+            - { label: 'Statistiques'}
+            - { label: 'Basic Charts', route: 'admin.charts', default: true , icon: 'chart-bar' }
+            - { label: 'Account'}
+            -
+                label: 'Données Utilisateur'
+                icon: 'exclamation'
+                children:
+                -
+                    label: 'Modifier les identifiants'
+                    icon: 'user'
+                    entity: 'User'
+                -
+                    label: 'Reset mot de passe'
+                    route: 'app_forgot_password_request'
+                    icon: 'key'
+                -
+                    label: 'Supprimer le compte'
+                    route: 'user.deleteprofile'
+                    icon: 'trash'
+
+
+
+
+
+
+
+
+
+        form_theme:
+            - '@EasyAdmin/form/bootstrap_4.html.twig'
+            - '@VichUploader/Form/fields.html.twig'
+    entities:
+        Mixes:
+            class: App\Entity\Projet
+            list:
+                title: "Liste des Mixes"
+                fields:
+                    - { property: 'title' , label: "Titre"}
+                    - { property: 'updated_at' , label: "Update"}
+                    - { property: 'views' , label: "Page vue"}
+                    - { property: 'downloadCount' , label: "Téléchargements"}
+            new:
+                title: "Ajouter nouveau Mix"
+            form:
+                fields:
+                    - { property: "title" , label: 'Titre du Mix' , type: "text"}
+                    - { property: "description" , label: 'Tracklist' , type: "textarea"}
+                    - { property: "tags" , label: 'Style'}
+                    - { property: "imageFile" , label: 'Fichier Image' , type: "file"}
+                    - { property: "ytb_link" , label: 'Lien Youtube' , type: "text"}
+                    - { property: "mp3File" , label: 'Fichier MP3' , type: "file"}
+                    - { property: "soundcloud" , label: 'Lien Soundcloud' , type: "text"}
+                    - { property: "mixcloud" , label: 'iFrame Soundcloud' , type: "text"}
+                    - { property: "fileSize" , label: 'Taille en Mo' , type: "integer"}
+
+        Tag:
+            class: App\Entity\Tag
+            list:
+                title: "Liste des Tags"
+                fields:
+                    - { property: "id" , label: 'ID' , type: "integer"}
+                    - { property: "name" , label: 'Nom du style' , type: "text"}
+                    - { property: "color" , label: 'Couleur' , type: "text"}
+            new:
+                title: "Ajouter nouveau genre"
+            form:
+                fields:
+                - { property: "name" , label: 'Titre du genre' , type: "text"}
+                - { property: "color" , label: 'Couleur' , type: "color" }
+
+        Contact:
+            class: App\Entity\Contact
+            list:
+                title: "Liste des Messages reçus"
+                fields: ['createdAt','name', 'email', 'subject', 'message']
+
+        User:
+            class: App\Entity\User
+            list:
+                title: "Liste des Utilisateurs"
+                fields: ['email', 'username', 'role']
+            form:
+                fields:
+                    - { property: "email" , label: 'Adresse Mail' , type: "email"}
+                    - { property: "username" , label: 'Username' , type: "text"}
+
+
+    list:
+        actions:
+        # displays both the action label and a custom icon
+        - { name: 'edit', label: 'Modifier'}
+        - { name: 'delete', label: 'Supprimer'}
+        - { name: 'new', label: 'Publier'}
+

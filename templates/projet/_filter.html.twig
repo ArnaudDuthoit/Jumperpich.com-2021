@@ -1,0 +1,16 @@
+<div class="filt">
+
+    <div class="a-filter pl-0 d-flex justify-content-center" id="accordion">
+
+        {{ form_start(form, {'attr': {'class' : 'js-filter-form'}}) }}
+
+        {{ form_widget(form.Tags) }}
+
+        <div class="spinner-border js-loading" role="status" aria-hidden="true" style="display:none" id="loader">
+            <span class="sr-only">Loading ... </span>
+        </div>
+        {{ form_widget(form.q, {'attr': {'placeholder': 'Rechercher un artiste, une track, un titre de mix' |trans}}) }}
+        {{ form_end(form) }}
+        </div>
+
+</div>

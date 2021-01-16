@@ -1,0 +1,39 @@
+{% extends '@EasyAdmin/default/layout.html.twig' %}
+
+{% set _content_title = 'Jumperpich | Delete Account ' %}
+
+{% block page_title -%}
+    {{ _content_title }}
+{%- endblock %}
+
+{% block content_header %}
+    <h1 class="title">Suppression Compte</h1>
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        .form-group label {
+            text-align: left !important;
+        }
+
+        .form-control {
+            width: 50%;
+        }
+    </style>
+
+    <div class="alert alert-danger text-center" role="alert">
+        <strong>ATTENTION!</strong> Toute suppression est definitive ! Etes vous vraiment certains de
+        vouloir supprimer votre compte ?
+    </div>
+
+
+{{ form_start(form) }}
+{{ form_widget(form) }}
+    <div class="form-group">
+<button class="btn btn__custom" onclick="return confirm('Attention dernier avertissement ! Voulez vous vraiment supprimer votre compte ?')">Supprimer</button>
+    </div>
+ {{ form_end(form) }}
+
+
+{% endblock %}
