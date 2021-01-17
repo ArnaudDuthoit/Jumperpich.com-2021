@@ -49,7 +49,7 @@
                      class="mx-auto d-block height-auto" style="width: 50vh">
             {% endif %}
         </div>
-        
+
         <div class="container my-4 py-4" id="tracklist">
 
             <h6><abbr>Tracklist</abbr></h6>
@@ -68,8 +68,7 @@
                 {% if projet.mp3filename %}
                     <a class="btn btn-default" role="button" target="_blank"
                        href="{{ path('downloadcount', {'mp3filename' : projet.mp3filename}) }}">
-                        <img alt="Télécharger" src="{{ 'pictures/Download-icon.png' | imagine_filter('medium') }}"
-                             class="d-block mw-100 h-auto mr-auto ml-auto">
+                        <img alt="Télécharger" src="{{ 'pictures/Download-icon.png' | imagine_filter('medium') }}">
                         {% trans %}Télécharger{% endtrans %}
                         <small> ({{ projet.filesize }} Mo)</small>
                     </a>
@@ -89,21 +88,33 @@
 
             <h6><abbr>STREAM</abbr></h6>
 
-            <div class="row justify-content-center">
+            <div class="my-4 pt-4">
 
-                {% if projet.soundcloud %}
-                    <div class="p-2 mx-auto">
-                        <a href="{{ projet.soundcloud }}" target="_blank" rel="noopener">
-                            <i class="fab fa-soundcloud"></i>
-                        </a>
-                    </div>
-                {% endif %}
-                {% if projet.ytblink %}
-                    <div class="p-2 mx-auto">
-                        <a href="{{ projet.ytblink }}" target="_blank" rel="noopener">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
+                <div class="text-center">
+
+                        {% if projet.soundcloud %}
+                            <div class="logo-stream">
+                                <a href="{{ projet.soundcloud }}" target="_blank" rel="noopener">
+                                    <i class="fab fa-soundcloud"></i>
+                                </a>
+                            </div>
+                        {% endif %}
+                        {% if projet.ytblink %}
+                            <div class="logo-stream">
+                                <a href="{{ projet.ytblink }}" target="_blank" rel="noopener">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        {% endif %}
+                </div>
+            </div>
+
+            <h6><abbr>{% trans %}Lecteur intégré{% endtrans %}</abbr></h6>
+
+            <div class="my-4 pt-4">
+
+                {% if projet.mixcloud %}
+                    {{ projet.mixcloud | raw }}
                 {% endif %}
             </div>
 
