@@ -6,17 +6,24 @@
     {% for flashError in app.flashes('reset_password_error') %}
         <div class="alert alert-danger" role="alert">{{ flashError }}</div>
     {% endfor %}
-    <h1>Reset your password</h1>
 
-    {{ form_start(requestForm) }}
-        {{ form_row(requestForm.email) }}
-        <div>
-            <small>
-                Enter your email address and we we will send you a
-                link to reset your password.
-            </small>
+    <div class="main" style="background: #000 url('{{ asset('pictures/login.jfif') }}') center no-repeat fixed">
+
+        <div class="container mt-4 text-center">
+
+            <div class="d-flex justify-content-center">
+
+                <div class="box">
+                    <h2>Reset du mot de passe</h2>
+
+                    {{ form_start(requestForm) }}
+                    {{ form_row(requestForm.email) }}
+
+                    <button class="btn btn-primary btn__custom">Envoyez l'email</button>
+                    {{ form_end(requestForm) }}
+
+                </div>
+            </div>
         </div>
-
-        <button class="btn btn-primary">Send password reset email</button>
-    {{ form_end(requestForm) }}
+    </div>
 {% endblock %}
