@@ -31,15 +31,6 @@ class SearchForm extends AbstractType
                'expanded' => true,
                'multiple' =>true
            ])
-
-           ->add('q', TextType::class,[
-               'label' => false,
-               'required' => false,
-               'attr'=>[
-                   'class' => 'd-flex justify-content-center',
-               ]
-           ])
-
        ;
     }
 

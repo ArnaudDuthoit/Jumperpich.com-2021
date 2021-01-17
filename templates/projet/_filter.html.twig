@@ -6,11 +6,8 @@
 
         {{ form_widget(form.Tags) }}
 
-        <div class="spinner-border js-loading" role="status" aria-hidden="true" style="display:none" id="loader">
-            <span class="sr-only">Loading ... </span>
-        </div>
-        {{ form_widget(form.q, {'attr': {'placeholder': 'Rechercher un artiste, une track, un titre de mix' |trans}}) }}
         {{ form_end(form) }}
-        </div>
+
+    </div>
 
 </div>

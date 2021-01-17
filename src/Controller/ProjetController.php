@@ -8,7 +8,6 @@ use App\Entity\Projet;
 use App\Form\SearchForm;
 use App\Repository\ProjetRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -39,7 +38,6 @@ class ProjetController extends AbstractController
      */
     public function index(ProjetRepository $repository, Request $request)
     {
-
 
         $data = new SearchData();
         $data->page = $request->get('page', 1);

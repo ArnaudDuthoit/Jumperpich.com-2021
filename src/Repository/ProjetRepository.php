@@ -4,9 +4,7 @@ namespace App\Repository;
 
 use App\Data\SearchData;
 use App\Entity\Projet;
-use App\Entity\ProjetSearch;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\Query;
 use Doctrine\ORM\QueryBuilder;
 use Knp\Component\Pager\Pagination\PaginationInterface;
 use Knp\Component\Pager\PaginatorInterface;
@@ -111,15 +109,6 @@ class ProjetRepository extends ServiceEntityRepository
             ->orderBy('p.created_at', 'DESC')
             ->select('tag', 'p')
             ->join('p.tags', 'tag');
-
-
-        if (!empty($search->q)){
-            $query = $query
-                ->andWhere('p.title LIKE :q')
-                ->orWhere('p.description LIKE :q')
-                ->setParameter('q', "%{$search->q}%");
-        }
-
 
         if(!empty($search->Tags)){
             $query = $query

@@ -65,8 +65,6 @@ async function loadForm() {
 
 async function loadURL(url) {
 
-    //showLoader();
-
     const params = new URLSearchParams(url.split('?')[1] || '');
     params.set('ajax', '1');
     const response = await fetch(url.split('?')[0] + '?' + params.toString(), {
@@ -91,35 +89,17 @@ async function loadURL(url) {
             params.delete('ajax');
             history.replaceState({}, '', url.split('?')[0] + '?' + params.toString())
 
-        } else {
-
-            this.content.innerHTML = ' <div class="container mt-4"><h3 style="color:black">Désolé aucun mix ne correspond à votre recherche ...</h3></div>';
-            params.delete('ajax');
-            history.replaceState({}, '', url.split('?')[0] + '?' + params.toString())
         }
 
     } else {
         console.error(response)
     }
 
-    //hideLoader();
 }
 
 
 Filter(element);
 
-function showLoader() {
-    document.getElementById('loader').style.display = null;
-    document.getElementById('loader').setAttribute('aria-hidden', 'false');
-    document.querySelector('.js-filter-form').classList.add('is-loading');
-}
-
-
-function hideLoader() {
-    document.getElementById('loader').style.display = 'none';
-    document.getElementById('loader').setAttribute('aria-hidden', 'true');
-    document.querySelector('.js-filter-form').classList.remove('is-loading');
-}
 
 
 // Disparition Page loading une fois le DOM chargé //
@@ -147,25 +127,6 @@ function BackToTop() {
 }
 
 BackToTop();
-
-
-// Intersect Observer pour animation apparition au scroll //
-/* const ratio = .1;
-const options = {root: null, rootMargin: '0px', threshold: .1};
-const handleIntersect = function (entries, observer) {
-    entries.forEach(function (entry) {
-        if (entry.intersectionRatio > ratio) {
-            entry.target.classList.remove('reveal');
-            observer.unobserve(entry.target)
-        } else {
-        }
-    })
-};
-const observer = new IntersectionObserver(handleIntersect, options);
-document.querySelectorAll('.reveal').forEach(function (r) {
-    observer.observe(r)
-}); */
-
 
 // Counter caracteres form contact //
 
