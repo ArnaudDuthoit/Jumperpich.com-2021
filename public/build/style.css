@@ -143,13 +143,6 @@ a[aria-expanded=false] .fa-chevron-down {
     border-color: #343a40 !important;
 }
 
-.is-loading .spinner-border {
-    position: absolute;
-    left: calc(50% - 1rem);
-    z-index: 5;
-    color: #ff006f;;
-
-}
 
 .filt {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
@@ -161,6 +154,7 @@ a[aria-expanded=false] .fa-chevron-down {
     box-shadow: 0 0 black;
 
 }
+
 
 .a-filter .title {
     font-weight: 600;
@@ -235,6 +229,10 @@ a[aria-expanded=false] .fa-chevron-down {
     z-index: 1000
 }
 
+*:focus {
+    box-shadow:none !important;
+    border-color: inherit !important;
+}
 
 .form-check-input:hover {
     background: #9faab7
