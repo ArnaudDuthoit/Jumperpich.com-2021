@@ -198,6 +198,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/home" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -255,7 +256,7 @@
       <workItem from="1610787153224" duration="23227000" />
       <workItem from="1610816908730" duration="316000" />
       <workItem from="1610817299553" duration="396000" />
-      <workItem from="1610883897320" duration="4203000" />
+      <workItem from="1610883897320" duration="8523000" />
     </task>
     <servers />
   </component>

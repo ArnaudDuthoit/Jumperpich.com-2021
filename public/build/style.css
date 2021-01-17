@@ -10,8 +10,28 @@ body {
     color: #ffffff !important;
 
 }
+
+.accordion-body {
+    color: black;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #2C2C2C;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
 .grecaptcha-badge {
     visibility: collapse !important;
+}
+
+.container-fluid {
+    padding: 0;
 }
 
 .cookie-container {
