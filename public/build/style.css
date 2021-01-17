@@ -600,16 +600,6 @@ ul > a {
     color: grey !important;
 }
 
-.musicplayer.open {
-    height: 120px;
-    border-top: 1px solid #eee;
-}
-
-.musicplayer {
-    height: 0;
-    background-color: #25292c;
-    transition: height .5s ease;
-}
 
 .fixed-bottom {
     position: fixed;
@@ -619,46 +609,9 @@ ul > a {
     z-index: 1030;
 }
 
-.musicplayer .flexy {
-    display: flex;
-    width: 100%;
-}
-
-.musicplayer iframe {
-    height: 120px;
-}
 
 iframe {
     width: 100%;
-}
-
-.musicplayer .link {
-    height: 120px;
-    line-height: 120px;
-    margin: 0 20px 20px;
-    color: #eee;
-}
-
-.musicplayer.open .closeBtn {
-    height: 41px;
-    top: -41px;
-    opacity: 1;
-}
-
-.musicplayer .closeBtn {
-    border: 1px solid #eee;
-    border-bottom: none;
-    position: absolute;
-    right: 16px;
-    width: 41px;
-    height: 0;
-    text-align: center;
-    background-color: #25292c;
-    color: #fff;
-    display: block;
-    line-height: 41px;
-    transition: all .5s ease;
-    overflow: hidden;
 }
 
 .btn-default {
