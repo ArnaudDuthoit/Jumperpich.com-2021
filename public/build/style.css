@@ -156,11 +156,9 @@ a[aria-expanded=false] .fa-chevron-down {
 }
 
 .a-filter {
-    /* float: left; */
     width: 100%;
     color: black;
     box-shadow: 0 0 black;
-
 
 }
 
@@ -179,11 +177,9 @@ a[aria-expanded=false] .fa-chevron-down {
 }
 
 .a-filter label {
-    /* width: 100%; */
+
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 1em;
 }
 
 .form-check {
@@ -224,7 +220,6 @@ a[aria-expanded=false] .fa-chevron-down {
     -o-appearance: none;
     appearance: none;
     position: relative;
-    top: 13.33333px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -237,7 +232,6 @@ a[aria-expanded=false] .fa-chevron-down {
     cursor: pointer;
     display: inline-block;
     outline: none;
-    position: relative;
     z-index: 1000
 }
 
@@ -254,10 +248,7 @@ a[aria-expanded=false] .fa-chevron-down {
     height: 40px;
     width: 40px;
     position: absolute;
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
     display: inline-block;
-    font-size: 26.66667px;
     text-align: center;
     line-height: 40px
 }
@@ -760,31 +751,6 @@ html.is-animating .transition-fade {
     max-width: 300px
 }
 
-
-.accordion-section .panel-default > .panel-heading {
-    border: solid 2px #fff;
-    text-shadow: 0.2rem 0.2rem 1rem #fff;
-    background: #2c2c2c;
-    padding: 0
-}
-
-.accordion-section .panel-default .panel-title a {
-    color: white;
-    display: block;
-    font-style: italic;
-    font-size: 2vh;
-}
-
-.accordion-section .panel-default .panel-title a:after {
-    font-style: normal;
-    font-size: 3rem;
-    float: right;
-    margin-top: -12px
-}
-
-.accordion-section .panel-default .panel-body {
-    font-size: 1.2rem
-}
 
 #nav_filter {
     background-color: transparent;
