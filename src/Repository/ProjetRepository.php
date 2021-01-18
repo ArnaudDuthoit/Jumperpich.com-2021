@@ -95,28 +95,27 @@ class ProjetRepository extends ServiceEntityRepository
 
         $query = $this->getSearchQuery($search)->getQuery();
 
-        return $this->paginator->paginate(
-            $query,
-            $search->page,
-        12
-        );
+        return $this->paginator->paginate($query, $search->page, 6);
+
     }
 
-    private function getSearchQuery(SearchData $search):QueryBuilder
+
+    private function getSearchQuery(SearchData $search): QueryBuilder
     {
+
         $query = $this
             ->createQueryBuilder('p')
-            ->orderBy('p.created_at', 'DESC')
             ->select('tag', 'p')
             ->join('p.tags', 'tag');
 
-        if(!empty($search->Tags)){
+        if (!empty($search->Tags)) {
             $query = $query
                 ->andWhere('tag.id IN (:Tags)')
                 ->setParameter('Tags', $search->Tags);
         }
 
         return $query;
+
     }
 
 

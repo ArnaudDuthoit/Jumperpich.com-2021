@@ -1,3 +1,10 @@
+//@import "~tailwindcss/base";
+//@import "~tailwindcss/components";
+//@import "~tailwindcss/utilities";
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
 * {
     margin: 0;
     padding: 0;
@@ -792,6 +799,7 @@ html.is-animating .transition-fade {
 
     width: 100% !important;
     height: 50px;
+    position: fixed;
     background: #2c2c2c;
     -moz-box-shadow: 0 1px 5px #000;
     -webkit-box-shadow: 0 1px 5px #000;
@@ -878,33 +886,6 @@ header {
     flex-flow: column;
 }
 
-.reveal [class*="reveal-"] {
-    opacity: 0;
-!important;
-    transform: translateY(30px);
-!important
-}
-
-[class*="reveal-"] {
-    transition: 1s cubic-bezier(.5, 0, 0, 1);
-}
-
-.reveal-2 {
-    transition-delay: 0.1s;
-}
-
-.reveal-3 {
-    transition-delay: 0.2s;
-}
-
-.reveal-5 {
-    transition-delay: 0.3s;
-}
-
-.reveal-4 {
-    transition-delay: 0.5s;
-}
-
 @keyframes animate {
 
     0% {
@@ -942,20 +923,6 @@ header {
 
 .nav-link:hover {
     color: white !important;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .reveal [class*="reveal-"] {
-        opacity: 1;
-    !important;
-        transform: translateY(0px);
-    !important
-    }
-
-    [class*="reveal-"] {
-        transition-duration: 0s !important;
-        transition-delay: 0s !important;
-    }
 }
 
 
@@ -1108,6 +1075,10 @@ table td span {
 
 @media (max-width: 767.98px) {
 
+    .form-check {
+        padding-left: 2rem !important;
+    }
+
     .tag-top {
         display:none
     }
@@ -1258,5 +1229,3 @@ table td span {
         z-index: 20000;
     }
 }
-
-

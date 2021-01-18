@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="" />
+    <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/Filter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.7b111b8e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/library_analytics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/SearchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/SearchData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SearchForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SearchForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/_filter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/_filter.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -195,11 +218,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JSExplicifyFields.moveToInitializer" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/home" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -256,7 +280,13 @@
       <workItem from="1610787153224" duration="23227000" />
       <workItem from="1610816908730" duration="316000" />
       <workItem from="1610817299553" duration="396000" />
-      <workItem from="1610883897320" duration="20412000" />
+      <workItem from="1610883897320" duration="21064000" />
+      <workItem from="1610905676770" duration="935000" />
+      <workItem from="1610913836927" duration="459000" />
+      <workItem from="1610914312342" duration="1122000" />
+      <workItem from="1610915465620" duration="3965000" />
+      <workItem from="1610969762626" duration="4045000" />
+      <workItem from="1610986357851" duration="10400000" />
     </task>
     <servers />
   </component>
@@ -264,22 +294,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="536" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1610972813368">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="536" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1610972813368" />
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610810919583">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610810919583" />
-    <state x="499" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610742652587">
+    <state x="499" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610997178763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610742652587" />
+    <state x="499" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610997178763" />
     <state x="545" y="326" key="ComposerInitDialogKey" timestamp="1610798994097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="545" y="326" key="ComposerInitDialogKey/0.0.1536.824@0.0.1536.824" timestamp="1610798994097" />
-    <state x="277" y="56" key="SettingsEditor" timestamp="1610817044947">
+    <state x="548" y="168" key="FileChooserDialogImpl" timestamp="1610915437855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610817044947" />
+    <state x="548" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610915437855" />
+    <state x="277" y="56" key="SettingsEditor" timestamp="1610915439542">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610915439542" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1610806216197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -288,13 +326,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610900529749" />
-    <state x="61" y="207" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610901270928">
+    <state x="16" y="118" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610997188485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="61" y="207" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610901270928" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610744199906">
+    <state x="16" y="118" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610997188485" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610998011892">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610744199906" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610998011892" />
   </component>
 </project>

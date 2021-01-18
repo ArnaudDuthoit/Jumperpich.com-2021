@@ -30,8 +30,7 @@ class SearchForm extends AbstractType
                'class'=> Tag::class,
                'expanded' => true,
                'multiple' =>true
-           ])
-       ;
+           ]);
     }
 
 
