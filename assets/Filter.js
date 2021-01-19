@@ -1,3 +1,6 @@
+import {Flipper, spring} from "flip-toolkit";
+
+
 /**
  * @property {HTMLElement} pagination
  * @property {HTMLElement} content
@@ -53,9 +56,8 @@ export default class Filter {
         data.forEach((value, key) => {
             params.append(key, value)
         })
-       return this.loadUrl(url.pathname + '? ' + params.toString())
+        return this.loadUrl(url.pathname + '? ' + params.toString())
     }
-
 
     async loadUrl(url) {
         const ajaxUrl = url + '&ajax=1'
@@ -68,7 +70,7 @@ export default class Filter {
         if (response.status >= 200 && response.status < 300) {
 
             const data = await response.json();
-            this.content.innerHTML = data.content
+            this.flipContent(data.content);
             this.sorting.innerHTML = data.sorting
             this.pagination.innerHTML = data.pagination
             history.replaceState({}, '', url)
@@ -78,4 +80,65 @@ export default class Filter {
         }
     }
 
+    /**
+     * Remplace les elements de la grille un effet d'animation flip
+     * @param {string} content
+     */
+    flipContent(content) {
+
+        const springConfig = 'gentle';
+
+        const exitSpring = function(element,index,onComplete){
+            spring({
+                config: 'stiff',
+                values: {
+                    translateY: [0, -20],
+                    opacity: [1, 0]
+                },
+                onUpdate: ({ translateY, opacity }) => {
+                    element.style.opacity = opacity;
+                    element.style.transform = `translateY(${translateY}px)`;
+                },
+                onComplete
+            })
+        }
+        const appearSpring = function(element,index){
+            spring({
+                config: 'stiff',
+                values: {
+                    translateY: [20, 0],
+                    opacity: [0, 1]
+                },
+                onUpdate: ({ translateY, opacity }) => {
+                    element.style.opacity = opacity;
+                    element.style.transform = `translateY(${translateY}px)`;
+                },
+                delay:index * 20
+            })
+        }
+
+        const flipper = new Flipper({
+            element: this.content
+        });
+        this.content.children.forEach(element => {
+            flipper.addFlipped({
+                element,
+                spring : springConfig,
+                flipId: element.id,
+                shouldFlip: false,
+                onExit: exitSpring
+            })
+        });
+        flipper.recordBeforeUpdate();
+        this.content.innerHTML = content;
+        this.content.children.forEach(element => {
+            flipper.addFlipped({
+                element,
+                spring: springConfig,
+                flipId: element.id,
+                onAppear: appearSpring
+            })
+        });
+        flipper.update()
+    }
 }

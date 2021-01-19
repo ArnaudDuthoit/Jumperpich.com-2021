@@ -16,13 +16,7 @@
 {% block body %}
 
     <div class="container-fluid main">
-
-
-    <div id="loading">
-        <img src="{{ asset('pictures/loader.gif') }}" alt="Website Loader">
-    </div>
-
-
+    
     {% for message in app.flashes('report') %}
         <div class="text-center fixed-bottom alert alert-success alert-dismissible fade show" role="alert">
             <strong>Warning !</strong> {{ message }}

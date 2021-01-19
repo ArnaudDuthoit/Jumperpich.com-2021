@@ -95,7 +95,7 @@ class ProjetRepository extends ServiceEntityRepository
 
         $query = $this->getSearchQuery($search)->getQuery();
 
-        return $this->paginator->paginate($query, $search->page, 6);
+        return $this->paginator->paginate($query, $search->page, 12);
 
     }
 
