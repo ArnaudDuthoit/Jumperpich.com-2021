@@ -11,6 +11,13 @@
     transition: all .125s ease-in-out;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+
 body {
     background-color: #ffffff;
     font-family: 'toronto_subwayregular', Helvetica, Arial, sans-serif;

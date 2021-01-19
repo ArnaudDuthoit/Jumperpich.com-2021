@@ -44,10 +44,15 @@ class ProjetController extends AbstractController
         $data->page = $request->get('page',1);
         $form = $this->createForm(SearchForm::class, $data);
         $form->handleRequest($request);
-
-
-
         $projets = $repository->findSearch($data);
+
+        if($request->get('ajax')){
+            return new JsonResponse([
+                'content' => $this->renderView('projet/_projets.html.twig' , ['projets' => $projets]),
+                 'sorting' => $this->renderView('projet/_sorting.html.twig' , ['projets' => $projets]),
+                'pagination' => $this->renderView('projet/_pagination.html.twig' , ['projets' => $projets])
+            ]);
+        }
 
         return $this->render('projet/index.html.twig', [
             'projets' => $projets,

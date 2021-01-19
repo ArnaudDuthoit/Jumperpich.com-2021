@@ -110,10 +110,7 @@
 {% include 'footer.html.twig' %}
 
 
-
-
-
-{% block javascripts %}{{ encore_entry_script_tags('app') }}{% endblock %}
+{% block javascripts %}{{ encore_entry_script_tags('app') | replace({'src=' : 'defer src='}) | raw }}{% endblock %}
 
 </body>
 </html>
