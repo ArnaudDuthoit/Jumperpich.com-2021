@@ -31,7 +31,7 @@ class ProjetRepository extends ServiceEntityRepository
     }
 
     /**
-     * Get all the projects order by date and with a max result of 8
+     * Get all the projects order by date and with a max result of 6
      * @return Projet[]
      */
     public function findLatest(): array
@@ -44,35 +44,9 @@ class ProjetRepository extends ServiceEntityRepository
             ->getResult();
     }
 
-    /**
-     * Get all the projects order by date and with a max result of 8
-     * @return Projet[]
-     */
-    public function AllOrderRecent(): array
-    {
-
-        return $this->createQueryBuilder('p')
-            ->orderBy('p.created_at', 'DESC')
-            ->getQuery()
-            ->getResult();
-    }
-
 
     /**
-     * Get all the projects order by date with no results limit
-     * @return Projet[]
-     */
-    public function findAllLatest(): array
-    {
-
-        return $this->createQueryBuilder('p')
-            ->orderBy('p.created_at', 'DESC')
-            ->getQuery()
-            ->getResult();
-    }
-
-    /**
-     * Get all the projects order by date and with a max result of 8
+     * Get all the projects order by date and with a max result of 6
      * @return Projet[]
      */
     public function findViewest(): array
@@ -106,7 +80,9 @@ class ProjetRepository extends ServiceEntityRepository
         $query = $this
             ->createQueryBuilder('p')
             ->select('tag', 'p')
+            ->orderBy('p.created_at', 'DESC')
             ->join('p.tags', 'tag');
+
 
         if (!empty($search->Tags)) {
             $query = $query

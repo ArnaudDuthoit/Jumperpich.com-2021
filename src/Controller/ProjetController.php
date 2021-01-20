@@ -41,16 +41,17 @@ class ProjetController extends AbstractController
 
         $data = new SearchData();
 
-        $data->page = $request->get('page',1);
+        $data->page = $request->get('page', 1);
         $form = $this->createForm(SearchForm::class, $data);
         $form->handleRequest($request);
         $projets = $repository->findSearch($data);
 
-        if($request->get('ajax')){
+        if ($request->get('ajax')) {
             return new JsonResponse([
-                'content' => $this->renderView('projet/_projets.html.twig' , ['projets' => $projets]),
-                 'sorting' => $this->renderView('projet/_sorting.html.twig' , ['projets' => $projets]),
-                'pagination' => $this->renderView('projet/_pagination.html.twig' , ['projets' => $projets])
+                'content' => $this->renderView('projet/_projets.html.twig', ['projets' => $projets]),
+                'sorting' => $this->renderView('projet/_sorting.html.twig', ['projets' => $projets]),
+                'pagination' => $this->renderView('projet/_pagination.html.twig', ['projets' => $projets]),
+                'pages' => ceil($projets->getTotalItemCount() / $projets->getItemNumberPerPage())
             ]);
         }
 
@@ -88,7 +89,7 @@ class ProjetController extends AbstractController
 
         $user = $this->getUser();
 
-        if ($user === null){ // Si c'est un anonyme on augmente la nombre de page vues
+        if ($user === null) { // Si c'est un anonyme on augmente la nombre de page vues
             $projet->setViews($views + 1);
         }
 
@@ -125,7 +126,7 @@ class ProjetController extends AbstractController
 
         $user = $this->getUser();
 
-        if ($user === null){ // Si c'est un anonyme on augmente la nombre de téléchargement
+        if ($user === null) { // Si c'est un anonyme on augmente la nombre de téléchargement
             $projet->setDownloadCount($download + 1);
         }
 
