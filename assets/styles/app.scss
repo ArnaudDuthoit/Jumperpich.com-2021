@@ -117,6 +117,13 @@ a[aria-expanded=false] .fa-chevron-down {
 
 }
 
+.is-loading .spinner-border{
+    position:absolute;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+    z-index:5;
+}
+
 .is-animated {
     animation: fadeIn ease 2s;
     -webkit-animation: fadeIn ease 2s;
