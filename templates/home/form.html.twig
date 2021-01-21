@@ -45,7 +45,6 @@
 
             <div class="col mt-4">
                 {{ form_start(form) }}
-                <input id="recaptchaToken" name="recaptchaToken" type="hidden">
                 {{ form_widget(form) }}
                 {{ form_end(form) }}
             </div>
@@ -56,17 +55,5 @@
 
         </div>
 
-
-{% endblock %}
-
-{% block javascripts %}
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfKBrEUAAAAALs0yDYX-RkVwE5TlqAAJz2GFSZA"></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LfKBrEUAAAAALs0yDYX-RkVwE5TlqAAJz2GFSZA').then(function (token) {
-                document.getElementById('recaptchaToken').value = token;
-            });
-        });
-    </script>
 
 {% endblock %}

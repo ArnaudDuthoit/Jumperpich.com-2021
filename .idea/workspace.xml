@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/pagination/pagination.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/knp_paginator.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/knp_paginator.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/0.ceb8f77c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.5d0b01cd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.7cfef2b1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.3d98bfc9.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/projet/_filter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/_filter.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/projet/_sorting.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/_sorting.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/projet/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/form.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +277,8 @@
       <workItem from="1610969762626" duration="4045000" />
       <workItem from="1610986357851" duration="10639000" />
       <workItem from="1611070427504" duration="15572000" />
-      <workItem from="1611158012445" duration="15816000" />
+      <workItem from="1611158012445" duration="16149000" />
+      <workItem from="1611249039420" duration="5707000" />
     </task>
     <servers />
   </component>
@@ -302,10 +295,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="536" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1610972813368" />
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610810919583">
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611250573510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610810919583" />
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1611250573510" />
     <state x="499" y="168" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610997178763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

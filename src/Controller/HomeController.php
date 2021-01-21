@@ -79,9 +79,6 @@ class HomeController extends AbstractController
     {
         $contact = new Contact;
 
-        $GOOGLE_RECAPTCHA_SECRET = $_ENV['GOOGLE_RECAPTCHA_SECRET'];
-
-        $recaptcha = new ReCaptcha($GOOGLE_RECAPTCHA_SECRET);
 
         # Add form fields
         $form = $this->createFormBuilder($contact)
@@ -94,10 +91,8 @@ class HomeController extends AbstractController
         # Handle form response
         $form->handleRequest($request);
 
-        $recaptchaToken = $request->request->get('recaptchaToken');
-        $resp = $recaptcha->verify($recaptchaToken);
 
-        if ($form->isSubmitted() && $form->isValid() & $resp->isSuccess()) { #Get Data for all the inputs form
+        if ($form->isSubmitted() && $form->isValid()) { #Get Data for all the inputs form
             $name = $form['name']->getData();
             $email = $form['email']->getData();
             $subject = $form['subject']->getData();
