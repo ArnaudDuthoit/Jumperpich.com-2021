@@ -8,16 +8,17 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
 use Symfony\Component\HttpFoundation\RequestStack;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class HoneyPotSubscriber implements EventSubscriberInterface
 {
-    private LoggerInterface $logger;
+    private LoggerInterface $honeyPotLogger;
 
     private RequestStack $requestStack;
 
-    public function __construct(LoggerInterface $logger, RequestStack $requestStack)
+    public function __construct(LoggerInterface $honeyPotLogger, RequestStack $requestStack)
     {
-        $this->logger = $logger;
+        $this->honeyPotLogger = $honeyPotLogger;
         $this->requestStack = $requestStack;
     }
 
@@ -36,8 +37,21 @@ class HoneyPotSubscriber implements EventSubscriberInterface
             return;
         }
 
-        dd($event);
+        $data = $event->getData();
 
+        if (!array_key_exists('phone', $data) || !array_key_exists('faxNumber', $data)) {
+            throw new HttpException(400, "Don't touch my form please!");
+        }
+
+        [
+            'phone' => $phone,
+            'faxNumber' => $faxNumber
+        ] = $data;
+
+        if ($phone !== "" || $faxNumber !== "") {
+            $this->honeyPotLogger->info("Une potentielle tentative de robot spammeur ayant l'adresse IP suivante '{$request->getClientIp()}' a eu lieu. Le champ phone contenait '${phone}' ET le champ faxNumber contenait '{$faxNumber}'.");
+            throw new HttpException(403, "Go away bot !");
+        }
     }
 
 }

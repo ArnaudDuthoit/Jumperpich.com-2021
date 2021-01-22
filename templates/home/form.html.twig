@@ -6,54 +6,71 @@
 
 
 
-        <div id="podcast" class="parallax-one"
-             style="background: #000 url('{{ asset('pictures/parallax4.jpg') }}') center no-repeat">
-            <div class="quote1-pattern" id="parallax-one"
-                 style="background: url('{{ asset('pictures/services-banner.png') }}');">
+    <div id="podcast" class="parallax-one"
+         style="background: #000 url('{{ asset('pictures/parallax4.jpg') }}') center no-repeat">
+        <div class="quote1-pattern" id="parallax-one"
+             style="background: url('{{ asset('pictures/services-banner.png') }}');">
+        </div>
+        <div class="row m-0">
+            <div>
+                <h1 class="parallax-title"><img src="{{ asset('pictures/contact.PNG') }}"></h1>
             </div>
-            <div class="row m-0">
-                <div>
-                    <h1 class="parallax-title"><img src="{{ asset('pictures/contact.PNG') }}"></h1>
-                </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-4 text-dark shadow p-3 mb-5 bg-white rounded">
+        {% for message in app.flashes('success') %}
+            <div class="text-center alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Succès !</strong> Formulaire envoyé avec succès !
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+        {% endfor %}
+
+        <div class="col text-center">
+
+
+            {% trans %}Ce formulaire vous permet de me contacter.{% endtrans %}<br><br>
+
+            {% trans %}C’est le bon endroit pour me soumettre une idée d’amélioration par exemple.{% endtrans %}<br><br>
+
+
+            {% trans %}Pour toutes les questions relatives au Site n’hésitez pas à consulter{% endtrans %}
+            <a href="{{ path('faq') }}" style="color:#FF69B4">{% trans %}la page FAQ.{% endtrans %}</a> <br><br>
         </div>
 
 
+        <div class="col mt-4">
+            {{ form_start(form) }}
+            {{ form_row(form.name) }}
+            {{ form_row(form.email) }}
+            {{ form_row(form.subject) }}
+            {{ form_row(form.message) }}
+            {{ form_row(form.Save) }}
+            <fieldset class="sweet-candy">
+                {{ form_label(form.phone) }}
+                {{ form_errors(form.phone) }}
+                {{ form_widget(form.phone) }}
+            </fieldset>
 
-        <div class="container mt-4 text-dark shadow p-3 mb-5 bg-white rounded">
-            {% for message in app.flashes('success') %}
-                <div class="text-center alert alert-success alert-dismissible fade show" role="alert">
-                    <strong>Succès !</strong> Formulaire envoyé avec succès !
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-            {% endfor %}
-
-            <div class="col text-center">
-
-
-                {% trans %}Ce formulaire vous permet de me contacter.{% endtrans %}<br><br>
-
-                {% trans %}C’est le bon endroit pour me soumettre une idée d’amélioration par exemple.{% endtrans %}<br><br>
-
-
-                {% trans %}Pour toutes les questions relatives au Site n’hésitez pas à consulter{% endtrans %}
-                <a href="{{ path('faq') }}" style="color:#FF69B4">{% trans %}la page FAQ.{% endtrans %}</a> <br><br>
-            </div>
+            <fieldset class="sweet-candy">
+                {{ form_label(form.faxNumber) }}
+                {{ form_errors(form.faxNumber) }}
+                {{ form_widget(form.faxNumber) }}
+            </fieldset>
 
 
-            <div class="col mt-4">
-                {{ form_start(form) }}
-                {{ form_widget(form) }}
-                {{ form_end(form) }}
-            </div>
+            {{ form_end(form) }}
+        </div>
 
-            <div class="mt-4">
+        <div class="mt-4">
             <small>{% trans %}Les informations envoyées par le biais de ce formulaire sont enregistrées dans un fichier informatisé pour traiter votre demande. Elles ne seront en aucun cas cédées à des tiers. Votre adresse email sera conservée uniquement durant le délai de ma réponse. Conformément à la loi « informatique et libertés », vous pouvez exercer votre droit d'accès aux données vous concernant et les faire rectifier.Consultez ma politique en matière de vie privée pour en savoir plus en cliquant{% endtrans %}
                 <a href="{{ path('RGPD') }}" style="color:#FF69B4">{% trans %}ICI{% endtrans %}</a></small></div>
 
-        </div>
+    </div>
 
 
 {% endblock %}

@@ -11,10 +11,14 @@
     transition: all .125s ease-in-out;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+fieldset.sweet-candy {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:0;
+    width: 0;
+    z-index: -1;
 }
 
 

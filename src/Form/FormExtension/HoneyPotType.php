@@ -12,24 +12,24 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 class HoneyPotType extends AbstractType
 {
 
-    private LoggerInterface $logger;
+    private LoggerInterface $honeyPotLogger;
     private RequestStack $requestStack;
 
-    public function __construct(LoggerInterface $logger, RequestStack $requestStack)
+    public function __construct(LoggerInterface $honeyPotLogger, RequestStack $requestStack)
     {
-        $this->logger = $logger;
+        $this->honeyPotLogger = $honeyPotLogger;
         $this->requestStack = $requestStack;
     }
 
     protected const DELICIOUS_HONEY_CANDY_FOR_BOT = "phone";
 
-    protected const FABULOUS_HONEY_CANDY_FOR_BOT = "faxnumber";
+    protected const FABULOUS_HONEY_CANDY_FOR_BOT = "faxNumber";
 
-    public function buildForm(FormBuilderInterface $builder, array $options): void
+    public function buildForm(FormBuilderInterface $builder, array $options):void
     {
         $builder->add(self::DELICIOUS_HONEY_CANDY_FOR_BOT, TextType::class, $this->setHoneyPotFieldConfiguration())
             ->add(self::FABULOUS_HONEY_CANDY_FOR_BOT, TextType::class, $this->setHoneyPotFieldConfiguration())
-            ->addEventSubscriber(new HoneyPotSubscriber($this->logger, $this->requestStack));
+            ->addEventSubscriber(new HoneyPotSubscriber($this->honeyPotLogger, $this->requestStack));
     }
 
     protected function setHoneyPotFieldConfiguration(): array
@@ -39,7 +39,6 @@ class HoneyPotType extends AbstractType
                 'autocomplete' => 'off',
                 'tabindex' => '-1'
             ],
-            'data' => 'fake data :(', //warning DELETE cette ligne apres test
             'mapped' => false,
             'required' => false
         ];
