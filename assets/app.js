@@ -22,7 +22,8 @@ if (document.querySelector('#form_message') !== null) { // si le formulaire de c
     function counter() {
 
         console.log('COUNTER');
-        const value = document.getElementById('form_message').value;
+        const value = document.getElementById('contact_message').value;
+        console.log(value);
         if (value.length === 0) {
             document.getElementById('text').innerHTML = "Message " + "(" + 0 + "/255)";
             return

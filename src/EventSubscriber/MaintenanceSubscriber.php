@@ -13,7 +13,7 @@ use Twig\Error\SyntaxError;
 class MaintenanceSubscriber implements EventSubscriberInterface
 {
 
-    private const AUTHORIZED_IP = '127.0.0.2';
+    private const AUTHORIZED_IP = '127.0.0.1';
     private Environment $twig;
     private string $maintenanceOn;
 

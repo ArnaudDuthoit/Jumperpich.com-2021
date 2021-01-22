@@ -44,11 +44,11 @@
 
 
         <div class="col mt-4">
-            {{ form_start(form) }}
+            {{ form_start(form, {'attr': {'id' : 'form_message'}}) }}
             {{ form_row(form.name) }}
             {{ form_row(form.email) }}
             {{ form_row(form.subject) }}
-            {{ form_row(form.message) }}
+            {{ form_row(form.message,{'attr': {'id' : 'form_message'}}) }}
             {{ form_row(form.Save) }}
             <fieldset class="sweet-candy">
                 {{ form_label(form.phone) }}
