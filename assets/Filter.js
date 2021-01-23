@@ -43,9 +43,10 @@ export default class Filter {
             if (e.target.tagName === 'A') {
                 e.preventDefault()
                 this.loadUrl(e.target.getAttribute('href'))
-                this.page=1
+                this.page = 1
             }
         })
+
 
         if (this.moreNav) {
             this.pagination.innerHTML = '<button class="btn btn__custom"> <i class="fas fa-chevron-circle-down"></i> </button>';
@@ -61,13 +62,13 @@ export default class Filter {
     }
 
     async loadMore() {
-        const button = this.pagination.querySelector('button');
-        button.setAttribute('disabled', 'disabled');
-        this.page++;
-        const url = new URL(window.location.href);
-        const params = new URLSearchParams(url.search);
-        params.set('page', this.page);
-        await this.loadUrl(url.pathname + '?' + params.toString(), true);
+        const button = this.pagination.querySelector('button')
+        button.setAttribute('disabled', 'disabled')
+        this.page++
+        const url = new URL(window.location.href)
+        const params = new URLSearchParams(url.search)
+        params.set('page', this.page)
+        await this.loadUrl(url.pathname + '?' + params.toString(), true)
         button.removeAttribute('disabled')
     }
 
@@ -107,7 +108,7 @@ export default class Filter {
                 this.pagination.style.display = null;
             }
             params.delete('ajax')
-            history.replaceState({}, '', url.split('?')[0] + '?' + params.toString())
+            history.replaceState({},'', url.split('?')[0] + '?' + params.toString())
         } else {
             console.error(response)
         }

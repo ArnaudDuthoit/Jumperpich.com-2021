@@ -58,6 +58,7 @@ class ProjetController extends AbstractController
         return $this->render('projet/index.html.twig', [
             'projets' => $projets,
             'form' => $form->createView(),
+            'pages' => ceil($projets->getTotalItemCount() / $projets->getItemNumberPerPage()),
             'current_menu' => 'mixes'
         ]);
 
