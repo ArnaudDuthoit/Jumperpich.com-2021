@@ -4,13 +4,32 @@
 
 {% block body %}
 
-<div class="container mt-4 shadow-lg rounded pt-2 pb-4 text-dark">
-
+<div class="container mt-4 shadow-lg rounded py-4 text-dark">
 
     <div class="container mt-4">
         <div class="list-group">
-            <a class="list-group-item flex-column align-items-start border border-dark" style="background-color: black;color: white">
-                <h5 class="text-center">Change Logs</h5>
+            <a class="list-group-item flex-column align-items-start border border-dark" style="background-color: #2C2C2C;color: white">
+                <h5 class="text-center">Changelog</h5>
+            </a>
+
+            <a class="list-group-item flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Site V2.0</h5>
+                    <small class="text-muted">23 Janvier 2021</small>
+                </div>
+                <p class="mb-1">Lancement de la nouvelle version du site</p>
+                <small class="text-muted">
+                    <ul> MAJ de toutes les dependances, packages et bundles </ul>
+                    <ul> MAJ Boostrap 4 vers 5 </ul>
+                    <ul> Refonte systeme de filtre en AJAX </ul>
+                    <ul> Animation de Flip pour l'affichage des mixes </ul>
+                    <ul> Bouton avec icone Afficher Plus / Load More comme pagination </ul>
+                    <ul> Retrait de Google Recaptcha </ul>
+                    <ul> Mise en place d'un Honeypot pour le formulaire de contact </ul>
+                    <ul> Mise en place d'un systeme de Maintenance </ul>
+                    <ul> Mise en place de Webpack pour le mode DEV  </ul>
+                    <ul> [DEV] Préparation de Tailwind CSS</ul>
+                 </small>
             </a>
 
 
@@ -20,7 +39,7 @@
                     <small class="text-muted">17 Janvier 2021</small>
                 </div>
                 <p class="mb-1">Ajustement graphique</p>
-                <small class="text-muted">Retrait des margin du au retrait du fixed navbar</small>
+                <small class="text-muted">Retrait des margin due au retrait du fixed navbar</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -187,7 +206,7 @@
                     <small class="text-muted">20/12/2019</small>
                 </div>
                 <p class="mb-1">Indices de performances Google</p>
-                <small class="text-muted">Optimisation du site pour obtenir les meilleurs indices possible sur <a href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https://jumperpich.com/">web.dev</a></small>
+                <small class="text-muted">Optimisation du site pour obtenir les meilleurs indices possible sur web.dev </small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -513,7 +532,7 @@
                     <small>16/07/2019</small>
                 </div>
                 <p class="mb-1">Notifications de messages non lus</p>
-                <small>Notif admin dans le header avec le nombre de messages non lus.Reset avec updated_at lorsqu'ils sont lus</small>
+                <small class="text-muted">Notif admin dans le header avec le nombre de messages non lus.Reset avec updated_at lorsqu'ils sont lus</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -522,7 +541,7 @@
                     <small>12/07/2019</small>
                 </div>
                 <p class="mb-1">Systeme de Captcha anti spam/anto bots pour le formulaire de contact</p>
-                <small>L'utilisateur doit desormais ecrire un code de sécurité (Captcha) généré aléatoirement.Si la Captcha n'est pas assez lisible l'utilisateur peut en charger une autre.</small>
+                <small class="text-muted">L'utilisateur doit desormais ecrire un code de sécurité (Captcha) généré aléatoirement.Si la Captcha n'est pas assez lisible l'utilisateur peut en charger une autre.</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -531,7 +550,7 @@
                     <small>12/07/2019</small>
                 </div>
                 <p class="mb-1">Page de mix</p>
-                <small>L'utilisateur peut désormais voir la taille et la longueur du mix à télécharger ainsi que le nombre de visites de la page et le nombre de téléchargements</small>
+                <small class="text-muted">L'utilisateur peut désormais voir la taille et la longueur du mix à télécharger ainsi que le nombre de visites de la page et le nombre de téléchargements</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -540,7 +559,7 @@
                     <small>12/07/2019</small>
                 </div>
                 <p class="mb-1">Email</p>
-                <small>Envoi du mail soit en français soit en anglais en fonction de la langue en cours d'utilisateur sur le site</small>
+                <small class="text-muted">Envoi du mail soit en français soit en anglais en fonction de la langue en cours d'utilisateur sur le site</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -549,7 +568,7 @@
                     <small>11/07/2019</small>
                 </div>
                 <p class="mb-1">Page de Contact</p>
-                <small>Amélioration affichage de la page de contact + sa traduction</small>
+                <small class="text-muted">Amélioration affichage de la page de contact + sa traduction</small>
             </a>
 
             <a class="list-group-item  flex-column align-items-start">
@@ -558,7 +577,7 @@
                     <small>11/07/2019</small>
                 </div>
                 <p class="mb-1">Désactivation de Swup</p>
-                <small>Désactivation de Swup concernant les chargement de page en AJAX qui n'etaient pas réellement necessaire</small>
+                <small class="text-muted">Désactivation de Swup concernant les chargement de page en AJAX qui n'etaient pas réellement necessaire</small>
             </a>
 
 
@@ -568,7 +587,7 @@
                     <small>10/07/2019</small>
                 </div>
                 <p class="mb-1">Compteur de Téléchargements</p>
-                <small>Ajout d'un compteur du nombre de Téléchargements pour chaque Mix</small>
+                <small class="text-muted">Ajout d'un compteur du nombre de Téléchargements pour chaque Mix</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -577,7 +596,7 @@
                     <small>08/07/2019</small>
                 </div>
                 <p class="mb-1">Bouton de selection de la langue</p>
-                <small>Ajout d'un bouton selectionneur de la langue à utiliser pour le site</small>
+                <small class="text-muted">Ajout d'un bouton selectionneur de la langue à utiliser pour le site</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -586,7 +605,7 @@
                     <small>08/07/2019</small>
                 </div>
                 <p class="mb-1">Mise en page</p>
-                <small>Changement de design pour la page de modifications informations liées au compte admin</small>
+                <small class="text-muted">Changement de design pour la page de modifications informations liées au compte admin</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -595,7 +614,7 @@
                     <small>08/07/2019</small>
                 </div>
                 <p class="mb-1">Google Analytics</p>
-                <small>Ajout du script de tracking/suivi pour une meilleure gestion des statistiques de visites</small>
+                <small class="text-muted">Ajout du script de tracking/suivi pour une meilleure gestion des statistiques de visites</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -604,7 +623,7 @@
                     <small>03/07/2019</small>
                 </div>
                 <p class="mb-1">Switcheur de langue</p>
-                <small>Cela permet à l'utilisateur de choisir la langue dans laquelle il veut afficher le site.L'utilisateur revient sur la page en cours quand il switch de langue</small>
+                <small class="text-muted">Cela permet à l'utilisateur de choisir la langue dans laquelle il veut afficher le site.L'utilisateur revient sur la page en cours quand il switch de langue</small>
             </a>
 
 
@@ -614,7 +633,7 @@
                     <small>02/07/2019</small>
                 </div>
                 <p class="mb-1">Amélioration des perforances</p>
-                <small>Amélioration concernant les temps d'exécutions des scripts et chargements des feuilles de styles.</small>
+                <small class="text-muted">Amélioration concernant les temps d'exécutions des scripts et chargements des feuilles de styles.</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -623,7 +642,7 @@
                     <small>02/07/2019</small>
                 </div>
                 <p class="mb-1">Page erreur personnalisée</p>
-                <small>Page d'erreur en fonction de la langue de l'utilisateur et du code erreur rencontré (404/500/etc...) </small>
+                <small class="text-muted">Page d'erreur en fonction de la langue de l'utilisateur et du code erreur rencontré (404/500/etc...) </small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -632,7 +651,7 @@
                     <small>01/07/2019</small>
                 </div>
                 <p class="mb-1">Page de contact</p>
-                <small>Redirection automatique de 5 sécondes aprés l'envoi d'un message + ajout de validation d'un adresse mail au format valide</small>
+                <small class="text-muted">Redirection automatique de 5 sécondes aprés l'envoi d'un message + ajout de validation d'un adresse mail au format valide</small>
             </a>
 
 
@@ -642,7 +661,7 @@
                     <small>30/06/19</small>
                 </div>
                 <p class="mb-1">Ergonomie admin</p>
-                <small>Ajout d'un bouton de modification rapide sur chaque card (Home/Index) et sur show.html.twig</small>
+                <small class="text-muted">Ajout d'un bouton de modification rapide sur chaque card (Home/Index) et sur show.html.twig</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -651,7 +670,7 @@
                     <small>30/06/19</small>
                 </div>
                 <p class="mb-1">Mise en page admin</p>
-                <small>Modification de la mise en page de gestion des mixes</small>
+                <small class="text-muted">Modification de la mise en page de gestion des mixes</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -660,7 +679,7 @@
                     <small>30/06/19</small>
                 </div>
                 <p class="mb-1">Lien de téléchargement</p>
-                <small>Correction du bug qui envoyé sur une page de prévisualisation puis permettait le téléchargement.Le téléchargement se fait maintenant directement au premier clic</small>
+                <small class="text-muted">Correction du bug qui envoyé sur une page de prévisualisation puis permettait le téléchargement.Le téléchargement se fait maintenant directement au premier clic</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -669,7 +688,7 @@
                     <small>30/06/19</small>
                 </div>
                 <p class="mb-1">Mise en page</p>
-                <small>Modification du Header,du footer,taille des cards,les cartes sont devenues clicables</small>
+                <small class="text-muted">Modification du Header,du footer,taille des cards,les cartes sont devenues clicables</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -678,7 +697,7 @@
                     <small>29/06/19</small>
                 </div>
                 <p class="mb-1">Traduction</p>
-                <small>Traduction automatique de tout le site pour les utilisateurs ayant un navigateur en anglais </small>
+                <small class="text-muted">Traduction automatique de tout le site pour les utilisateurs ayant un navigateur en anglais </small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -687,7 +706,7 @@
                     <small>29/06/19</small>
                 </div>
                 <p class="mb-1">Bouton retour au TOP</p>
-                <small>Masquage du bouton de retour vers le top sur Telephone</small>
+                <small class="text-muted">Masquage du bouton de retour vers le top sur Telephone</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -696,7 +715,7 @@
                     <small>29/06/19</small>
                 </div>
                 <p class="mb-1">Mise en page</p>
-                <small>Amélioration de la responsibilité Desktop/Tablette/Smartphones</small>
+                <small class="text-muted">Amélioration de la responsibilité Desktop/Tablette/Smartphones</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -705,7 +724,7 @@
                     <small>29/06/19</small>
                 </div>
                 <p class="mb-1">Redirection vers le haut de la page</p>
-                <small>Redirection automatique et animée vers le haut de la page sur navigateur à chaque changement de page</small>
+                <small class="text-muted">Redirection automatique et animée vers le haut de la page sur navigateur à chaque changement de page</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -714,7 +733,7 @@
                     <small>29/06/19</small>
                 </div>
                 <p class="mb-1">Meta Tag</p>
-                <small>Modifications + Traduction des Meta-tags en fonction de la langue de l'utilisateur</small>
+                <small class="text-muted">Modifications + Traduction des Meta-tags en fonction de la langue de l'utilisateur</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -723,7 +742,7 @@
                     <small>29/06/19</small>
                 </div>
                 <p class="mb-1">Redirection</p>
-                <small>Redirection dans tous les cas vers la version sécurisée (HTTPS://WWW.jumperpich.com)</small>
+                <small class="text-muted">Redirection dans tous les cas vers la version sécurisée (HTTPS://WWW.jumperpich.com)</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -732,7 +751,7 @@
                     <small>25/06/19</small>
                 </div>
                 <p class="mb-1">Bouton de partage Facebook</p>
-                <small>Ajout d'un bouton pour partager sur Facebook la page d'un mix précis.</small>
+                <small class="text-muted">Ajout d'un bouton pour partager sur Facebook la page d'un mix précis.</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -741,7 +760,7 @@
                     <small>25/06/19</small>
                 </div>
                 <p class="mb-1">Bouton retour haut de page</p>
-                <small>Apparition d'un bouton retour haut de page en fonction du scroll</small>
+                <small class="text-muted">Apparition d'un bouton retour haut de page en fonction du scroll</small>
             </a>
 
 
@@ -751,7 +770,7 @@
                     <small>24/06/19</small>
                 </div>
                 <p class="mb-1">Loader pendant les chargements de pages</p>
-                <small>Ajout d'une animation pour signaler un chargement de pages à l'utilisateur</small>
+                <small class="text-muted">Ajout d'une animation pour signaler un chargement de pages à l'utilisateur</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -760,7 +779,7 @@
                     <small class="text-muted">22/06/19</small>
                 </div>
                 <p class="mb-1">Fonction recherche</p>
-                <small>Résumé de la recherche en cas de mix non trouvés pour les critères choisis</small>
+                <small class="text-muted">Résumé de la recherche en cas de mix non trouvés pour les critères choisis</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -769,7 +788,7 @@
                     <small class="text-muted">22/06/19</small>
                 </div>
                 <p class="mb-1">Fonction recherche</p>
-                <small>Correction du bug de recherche apres le remplacement de contenu via requete Ajax</small>
+                <small class="text-muted">Correction du bug de recherche apres le remplacement de contenu via requete Ajax</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -778,7 +797,7 @@
                     <small class="text-muted">22/06/19</small>
                 </div>
                 <p class="mb-1">Mise en page et ergonomie</p>
-                <small>Mise en place de Barre de navigation pour faciliter l'ergonomie sur Mobile/Tablette</small>
+                <small class="text-muted">Mise en place de Barre de navigation pour faciliter l'ergonomie sur Mobile/Tablette</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -787,7 +806,7 @@
                     <small class="text-muted">21/06/19</small>
                 </div>
                 <p class="mb-1">Signal visuel concernant le genre</p>
-                <small>Code couleur en fonction du genre de musique du mix</small>
+                <small class="text-muted">Code couleur en fonction du genre de musique du mix</small>
             </a>
 
             <a class="list-group-item flex-column align-items-start">
@@ -796,7 +815,7 @@
                     <small class="text-muted">21/06/19</small>
                 </div>
                 <p class="mb-1">Animations</p>
-                <small>Ajout d'animations de transitions de page pour une meilleure fluidité</small>
+                <small class="text-muted">Ajout d'animations de transitions de page pour une meilleure fluidité</small>
             </a>
             <a class="list-group-item flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -804,7 +823,7 @@
                     <small class="text-muted">21/06/19</small>
                 </div>
                 <p class="mb-1">Cookies Consent</p>
-                <small>Bandeau d'acceptation de cookies au premier chargement du site</small>
+                <small class="text-muted">Bandeau d'acceptation de cookies au premier chargement du site</small>
             </a>
             <a class="list-group-item flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -812,7 +831,7 @@
                     <small>20/06/19</small>
                 </div>
                 <p class="mb-1"> Mise à jour de la page de recherche de mixes</p>
-                <small>Ajout d'un onglet "all" et ajout d'un champ de recherche par titre</small>
+                <small class="text-muted">Ajout d'un onglet "all" et ajout d'un champ de recherche par titre</small>
             </a>
             <a class="list-group-item flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -820,7 +839,7 @@
                     <small>19/06/19</small>
                 </div>
                 <p class="mb-1"> Mise à jour de la page de recherche de mixes</p>
-                <small>Ajout de 3 onglets prédéfinis</small>
+                <small class="text-muted">Ajout de 3 onglets prédéfinis</small>
             </a>
             <a class="list-group-item flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -828,7 +847,7 @@
                     <small>19/06/19</small>
                 </div>
                 <p class="mb-1">Retrait du bouton de signalement de bug sur la Page d'un Mix</p>
-                <small>Redirection vers le formulaire de contact plutot qu'un bouton de signalement</small>
+                <small class="text-muted">Redirection vers le formulaire de contact plutot qu'un bouton de signalement</small>
             </a>
             <a class="list-group-item flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -836,7 +855,7 @@
                     <small class="text-muted">19/06/19</small>
                 </div>
                 <p class="mb-1">Mise à jour de la majorité des pages</p>
-                <small>Ajout d'ombrages etc..</small>
+                <small class="text-muted">Ajout d'ombrages etc..</small>
             </a>
             <a class="list-group-item flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -844,7 +863,7 @@
                     <small class="text-muted">18/06/19</small>
                 </div>
                 <p class="mb-1"> Page de suivi du développement (jumperpich.com/update)</p>
-                <small >Colonne de MAJ finies et colonne de MAJ à venir</small>
+                <small class="text-muted">Colonne de MAJ finies et colonne de MAJ à venir</small>
             </a>
             <a class="list-group-item  flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
@@ -852,7 +871,7 @@
                     <small>Juin 2019</small>
                 </div>
                 <p class="mb-1">Mise en production de la première version stable du site</p>
-                <small>Lancement de la version MVP (Produit Minimum Viable)</small>
+                <small class="text-muted">Lancement de la version MVP (Produit Minimum Viable)</small>
             </a>
         </div>
     </div>

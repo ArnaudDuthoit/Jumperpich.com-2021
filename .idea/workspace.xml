@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EventSubscriber/HoneyPotSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/EventSubscriber/HoneyPotSubscriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/FormExtension/HoneyPotType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/FormExtension/HoneyPotType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,7 +285,7 @@
       <workItem from="1611264136803" duration="388000" />
       <workItem from="1611321633078" duration="11709000" />
       <workItem from="1611349367454" duration="4437000" />
-      <workItem from="1611397594856" duration="6975000" />
+      <workItem from="1611397594856" duration="9317000" />
     </task>
     <servers />
   </component>

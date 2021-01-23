@@ -15,76 +15,67 @@
 
 {% block body %}
 
-    <div class="container-fluid main">
+    <div class="container-fluid main pt-4 mt-4">
 
-    {% for message in app.flashes('report') %}
-        <div class="text-center fixed-bottom alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Warning !</strong> {{ message }}
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-    {% endfor %}
-
-    <div class="container text-center shadow rounded">
-        <div class="Blog-meta my-4">
-            {{ projet.createdAt | date('d/m/Y') }} - {% for tag in projet.tags %}{{ tag.name }}{% endfor %}
-        </div>
-
-        <h6><abbr>{{ projet.title }}</abbr></h6>
-
-        <div class="row" id="{{ projet.filename }}">
-            {% if projet.filename %}
-                <img src="{{ vich_uploader_asset(projet, 'imageFile') | imagine_filter('medium') }}"
-                     alt="{{ projet.title }}"
-                     class="mx-auto d-block h-auto" style="width: 50vh">
-            {% else %}
-                <img src="{{ 'images/projets/empty.jpg' | imagine_filter('medium') }}" alt="{{ projet.title }}"
-                     class="mx-auto d-block height-auto" style="width: 50vh">
-            {% endif %}
-        </div>
-
-        <div class="container my-4 py-4" id="tracklist">
-
-            <h6><abbr>Tracklist</abbr></h6>
-
-            <div class="BlogItem-tracklist text-center">
-                {{ projet.description | nl2br }}
+        <div class="container text-center shadow roundedpt-4">
+            <div class="Blog-meta my-4">
+                {{ projet.createdAt | date('d/m/Y') }} - {% for tag in projet.tags %}{{ tag.name }}{% endfor %}
             </div>
-        </div>
 
-        <div class="container my-4 pt-4" id="download">
+            <h6><abbr>{{ projet.title }}</abbr></h6>
 
-            <h6><abbr>{% trans %}Téléchargement{% endtrans %}</abbr></h6>
-
-            <div class="mx-4 py-4">
-
-                {% if projet.mp3filename %}
-                    <a class="btn btn-default" role="button" target="_blank"
-                       href="{{ path('downloadcount', {'mp3filename' : projet.mp3filename}) }}">
-                        <img alt="Télécharger" src="{{ 'pictures/Download-icon.png' | imagine_filter('medium') }}">
-                        {% trans %}Télécharger{% endtrans %}
-                        <small> ({{ projet.filesize }} Mo)</small>
-                    </a>
+            <div class="row" id="{{ projet.filename }}">
+                {% if projet.filename %}
+                    <img src="{{ vich_uploader_asset(projet, 'imageFile') | imagine_filter('medium') }}"
+                         alt="{{ projet.title }}"
+                         class="mx-auto d-block h-auto" style="width: 50vh">
                 {% else %}
-                    <div class="text-center">
-                        {% trans %}Téléchargement indisponible{% endtrans %}...
-                    </div>
+                    <img src="{{ 'images/projets/empty.jpg' | imagine_filter('medium') }}" alt="{{ projet.title }}"
+                         class="mx-auto d-block height-auto" style="width: 50vh">
                 {% endif %}
+            </div>
+
+            <div class="container my-4 py-4" id="tracklist">
+
+                <h6><abbr>Tracklist</abbr></h6>
+
+                <div class="BlogItem-tracklist text-center">
+                    {{ projet.description | nl2br }}
+                </div>
+            </div>
+
+            <div class="container my-4 pt-4" id="download">
+
+                <h6><abbr>{% trans %}Téléchargement{% endtrans %}</abbr></h6>
+
+                <div class="mx-4 py-4">
+
+                    {% if projet.mp3filename %}
+                        <a class="btn btn-default" role="button" target="_blank"
+                           href="{{ path('downloadcount', {'mp3filename' : projet.mp3filename}) }}">
+                            <img alt="Télécharger" src="{{ 'pictures/Download-icon.png' | imagine_filter('medium') }}">
+                            {% trans %}Télécharger{% endtrans %}
+                            <small> ({{ projet.filesize }} Mo)</small>
+                        </a>
+                    {% else %}
+                        <div class="text-center">
+                            {% trans %}Téléchargement indisponible{% endtrans %}...
+                        </div>
+                    {% endif %}
+
+                </div>
+
 
             </div>
 
+            {% if projet.soundcloud is not null or projet.ytblink is not null %}
+            <div class="container my-4 py-4">
 
-        </div>
+                <h6><abbr>STREAM</abbr></h6>
 
-        {% if projet.soundcloud is not null or projet.ytblink is not null %}
-        <div class="container my-4 py-4">
+                <div class="my-4 pt-4">
 
-            <h6><abbr>STREAM</abbr></h6>
-
-            <div class="my-4 pt-4">
-
-                <div class="text-center">
+                    <div class="text-center">
 
                         {% if projet.soundcloud %}
                             <div class="logo-stream">
@@ -100,43 +91,44 @@
                                 </a>
                             </div>
                         {% endif %}
+                    </div>
                 </div>
-            </div>
 
-            <h6><abbr>{% trans %}Lecteur intégré{% endtrans %}</abbr></h6>
-
-            <div class="my-4 pt-4">
-
-                {% if projet.mixcloud %}
-                    {{ projet.mixcloud | raw }}
-                {% endif %}
-            </div>
-
-            {% endif %}
-
-            <div class="container my-4 py-4 text-center" id="share">
-
-                <h6><abbr>{% trans %}Partager{% endtrans %}</abbr></h6>
+                <h6><abbr>{% trans %}Lecteur intégré{% endtrans %}</abbr></h6>
 
                 <div class="my-4 pt-4">
 
-                    <div class="text-center">
+                    {% if projet.mixcloud %}
+                        {{ projet.mixcloud | raw }}
+                    {% endif %}
+                </div>
 
-                        <div class="logo-social"><a
-                                    href="https://www.facebook.com/dialog/share?app_id=377287179598756&display=popup&href=https://www.jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
-                                    target="blank">
-                                <img src="{{ asset('pictures/facebook.jpg') }}" style="width:87%" alt="Facebook"></a>
-                        </div>
+                {% endif %}
 
-                        <div class="logo-social"><a
-                                    href="https://twitter.com/share?url=https://www.jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
-                                    target="blank">
-                                <img src="{{ asset('pictures/twitter.jpg') }}" style="width:87%" alt="Twitter"></a>
+                <div class="container my-4 py-4 text-center" id="share">
+
+                    <h6><abbr>{% trans %}Partager{% endtrans %}</abbr></h6>
+
+                    <div class="my-4 pt-4">
+
+                        <div class="text-center">
+
+                            <div class="logo-social"><a
+                                        href="https://www.facebook.com/dialog/share?app_id=377287179598756&display=popup&href=https://www.jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                        target="blank">
+                                    <img src="{{ asset('pictures/facebook.jpg') }}" style="width:87%"
+                                         alt="Facebook"></a>
+                            </div>
+
+                            <div class="logo-social"><a
+                                        href="https://twitter.com/share?url=https://www.jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                        target="blank">
+                                    <img src="{{ asset('pictures/twitter.jpg') }}" style="width:87%" alt="Twitter"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 {% endblock %}
