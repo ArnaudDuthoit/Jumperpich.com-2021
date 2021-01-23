@@ -20,8 +20,6 @@ if (document.querySelector('.js-filter') !== null) { // Si le systeme de filtre 
 if (document.querySelector('#form_message') !== null) { // si le formulaire de contact est sur la page
 
     function counter() {
-
-        console.log('COUNTER');
         const value = document.getElementById('contact_message').value;
         console.log(value);
         if (value.length === 0) {
@@ -72,21 +70,33 @@ setTimeout(() => {
 
 // Retour au top //
 
-const btn = $('#back-to-top');
+const scrollToTopBtn = document.getElementById("back-to-top")
+const rootElement = document.documentElement
+const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
+
+function handleScroll() {
+    // Do something on scroll
+    const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+    if ((rootElement.scrollTop / scrollTotal ) > 0.80 ) {
+        // Show button
+        scrollToTopBtn.classList.add("show")
     } else {
-        btn.removeClass('show');
+        // Hide button
+        scrollToTopBtn.classList.remove("show")
     }
-});
+}
 
-btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-});
+document.addEventListener("scroll", handleScroll)
 
+function scrollToTop() {
+    // scroll to top logic
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+}
+scrollToTopBtn.addEventListener("click", scrollToTop)
 
 
 

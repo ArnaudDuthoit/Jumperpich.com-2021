@@ -11,6 +11,15 @@
     transition: all .125s ease-in-out;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#FAQ h3 {
+    color: #2C2C2C;
+    font-weight:bold
+}
+
 fieldset.sweet-candy {
     opacity: 0;
     position: absolute;
@@ -245,21 +254,18 @@ a[aria-expanded=false] .fa-chevron-down {
 }
 
 #back-to-top {
-    display: inline-block;
-    text-align: center;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color .3s,
-    opacity .5s, visibility .5s;
+    z-index: 100;
     opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
+    transform: translateY(100px);
+    transition: all .5s ease
 }
 
 #back-to-top.show {
     opacity: 1;
-    visibility: visible;
+    transform: translateY(0)
 }
 
 

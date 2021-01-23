@@ -5,323 +5,248 @@
 
 {% block body %}
 
-    <div class="container-fluid main">
+    <div class="container-fluid main mt-4 pt-4">
 
-        <div class="container text-center" id="FAQ">
+        <div class="container pt-4 text-center" id="FAQ">
 
             {% if app.request.locale in ['fr','fr_BE','fr_BJ','fr_BF','fr_BI','fr_CM','fr_CA','fr_CF','fr_TD','fr_KM',
                 'fr_CG', 'fr_CD','fr_CI','fr_DJ','fr_GQ','fr_FR','fr_GA','fr_GP','fr_GN','fr_LU','fr_MG','fr_ML','fr_MQ',
                 'fr_MC','fr_NE','fr_RW','fr_RE','fr_BL','fr_MF','fr_SN','fr_CH','fr_TG'] %}
 
-                <div class="accordion mt-4" id="accordionExample">
-                    <div class="container pt-4" style="min-height:100vh">
-                        <h6><abbr>Questions Réponses</abbr></h6>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Questions générales sur le site
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>Comment fonctionne Jumperpich.com ?</strong></p>
 
-                                    <ul>Jumperpich est une plateforme permettant à tout le monde de consulter et
-                                        télécharger
-                                        gratuitement des mixes de Jumperpich. Un système de partage, représenté par
-                                        l'icone
-                                        Partager, permet de partager un mix sur son fils d'actualité facebook.
-                                    </ul>
-                                    <p><strong>Qui peut poster des mixes ?</strong></p>
+                <div class="container pt-4" style="min-height:100vh">
+                    <h6><abbr>Questions Réponses</abbr></h6>
+                    <h3>- Questions générales sur le site -</h3>
+                    <div class="accordion-body">
+                        <p><strong>Comment fonctionne Jumperpich.com ?</strong></p>
 
-                                    <ul>Uniquement l'administrateur , ici Jumperpich . Cependant le site est entièrement
-                                        consultable
-                                        par tout le monde.
-                                    </ul>
-                                    <p><strong>Les Mixes sont-ils modérés / édités ?</strong></p>
+                        <ul>Jumperpich est une plateforme permettant à tout le monde de consulter et
+                            télécharger
+                            gratuitement des mixes de Jumperpich. Un système de partage, représenté par
+                            l'icone
+                            Partager, permet de partager un mix sur son fils d'actualité facebook.
+                        </ul>
+                        <p><strong>Qui peut poster des mixes ?</strong></p>
 
-                                    <ul>Les Mixes postés font l’objet d’une vérification par mes soins avant
-                                        publication.
-                                    </ul>
-                                    <p><strong>Comment Jumperpich.com est-il financé ?</strong></p>
+                        <ul>Uniquement l'administrateur , ici Jumperpich . Cependant le site est entièrement
+                            consultable
+                            par tout le monde.
+                        </ul>
+                        <p><strong>Les Mixes sont-ils modérés / édités ?</strong></p>
 
-                                    <ul>Jumperpich est entièrement financé de ma poche.Aucune somme d'argent n'est
-                                        demandée aux
-                                        visiteurs. La passion du partage avant tout :)
-                                    </ul>
-                                    <p><strong>Comment travaille Jumperpich avec ses partenaires ?</strong></p>
+                        <ul>Les Mixes postés font l’objet d’une vérification par mes soins avant
+                            publication.
+                        </ul>
+                        <p><strong>Comment Jumperpich.com est-il financé ?</strong></p>
 
-                                    <ul>Je n'ai aucun partenaires à proprement parlé.Les compositeurs peuvent m'envoyer
-                                        leurs sons
-                                        pour que je les joue. Cependant si les sons ne me conviennent pas , je n'ai
-                                        aucune
-                                        obligation de les jouer.
-                                    </ul>
-                                    <p><strong>En quoi les sons proposés par les partenaires se différencient-ils de
-                                            l'auto-promotion ?</strong></p>
+                        <ul>Jumperpich est entièrement financé de ma poche.Aucune somme d'argent n'est
+                            demandée aux
+                            visiteurs. La passion du partage avant tout :)
+                        </ul>
+                        <p><strong>Comment travaille Jumperpich avec ses partenaires ?</strong></p>
 
-                                    <ul>Les sons proposés directement par les compositeurs sont évalués et filtrés par
-                                        mes soins.
-                                    </ul>
-                                    <p><strong>Peut-on savoir quels sont les compositeurs affiliés ?</strong></p>
+                        <ul>Je n'ai aucun partenaires à proprement parlé.Les compositeurs peuvent m'envoyer
+                            leurs sons
+                            pour que je les joue. Cependant si les sons ne me conviennent pas , je n'ai
+                            aucune
+                            obligation de les jouer.
+                        </ul>
+                        <p><strong>En quoi les sons proposés par les partenaires se différencient-ils de
+                                l'auto-promotion ?</strong></p>
 
-                                    <ul>Non, tout simplement parce que je souhaite conserver ma neutralité. Cependant un
-                                        lien vers
-                                        leurs réseaux Sociaux sera régulièrement présent dans la description des sets.
-                                    </ul>
-                                    <p><strong> Y a-t-il des équivalents à Jumperpich.com dans d’autres pays ?</strong>
-                                    </p>
+                        <ul>Les sons proposés directement par les compositeurs sont évalués et filtrés par
+                            mes soins.
+                        </ul>
+                        <p><strong>Peut-on savoir quels sont les compositeurs affiliés ?</strong></p>
 
-                                    Oui bien sur ! Je ne suis pas le seul à proposer ce genre de plateforme c'est
-                                    certains.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Inscription et compte
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>Besoin de s’inscrire ?</strong></p>
+                        <ul>Non, tout simplement parce que je souhaite conserver ma neutralité. Cependant un
+                            lien vers
+                            leurs réseaux Sociaux sera régulièrement présent dans la description des sets.
+                        </ul>
+                        <p><strong> Y a-t-il des équivalents à Jumperpich.com dans d’autres pays ?</strong>
+                        </p>
 
-                                    <ul>Vous pouvez consulter l’intégralité du contenu présent sur le site sans vous
-                                        inscrire.
-                                    </ul>
-                                    <p><strong>L’inscription aura-t-elle un coût ?</strong></p>
-
-                                    <ul>Non. La création d’un compte sur le site et l’utilisation de l’ensemble des
-                                        fonctionnalités
-                                        est et restera entièrement gratuite.
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    Utiliser Jumperpich.com
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>À quoi correspond l'onglet "Les plus populaires" et "les plus vus" de la
-                                            page d’accueil ?</strong></p>
-
-                                    <ul>La page “Les plus populaires” et "les plus vus" est le point d’entrée des
-                                        nouveaux
-                                        utilisateurs car il s’agit de la page d’accueil par défaut. Elle a pour
-                                        principal objectif
-                                        de proposer un contenu de qualité et diversifié pour correspondre au plus grand
-                                        nombre de
-                                        personnes. Le contenu de la page “Les plus populaires” et "les plus vus" est
-                                        généré
-                                        automatiquement. Pour cette raison, il est possible que certains des mixes mis
-                                        en avant
-                                        soient orientés par un nombre de visites accrus de certaines pages.
-                                    </ul>
-                                    <p><strong>Où trouver tous les Mixes d’un seul Genre ?</strong></p>
-
-                                    <ul>Pour la plupart des genres, une page a été créée qui rassemble tous les Mixes
-                                        qui le
-                                        concerne. Vous pouvez également accéder à un Genre spécifique de plusieurs
-                                        façons : Via le
-                                        menu, en sélectionnant un Mix affiché parmi les plus populaires, ou en cliquant
-                                        sur "Voir
-                                        tout" pour afficher la liste complète.
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                    Me contacter
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>Comment puis-je contacter Jumperpich ?</strong></p>
-
-                                    <ul>Vous pouvez adresser toutes vos questions et demandes d'informations directement
-                                        via le
-                                        formulaire de contact du site. Si vous voulez me faire un retour sur un
-                                        dysfonctionnement ou
-                                        un bug sur le site, n’hésitez pas à me contacter
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        Oui bien sur ! Je ne suis pas le seul à proposer ce genre de plateforme c'est
+                        certains.
                     </div>
                 </div>
+                <div class="accordion-item">
+                    <h3>- Inscription et compte -</h3>
+                    <div class="accordion-body">
+                        <p><strong>Besoin de s’inscrire ?</strong></p>
+
+                        <ul>Vous pouvez consulter l’intégralité du contenu présent sur le site sans vous
+                            inscrire.
+                        </ul>
+                        <p><strong>L’inscription aura-t-elle un coût ?</strong></p>
+
+                        <ul>Non. La création d’un compte sur le site et l’utilisation de l’ensemble des
+                            fonctionnalités
+                            est et restera entièrement gratuite.
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>- Utiliser Jumperpich.com -</h3>
+                    <div class="accordion-body">
+                        <p><strong>À quoi correspond l'onglet "Les plus populaires" et "les plus vus" de la
+                                page d’accueil ?</strong></p>
+
+                        <ul>La page “Les plus populaires” et "les plus vus" est le point d’entrée des
+                            nouveaux
+                            utilisateurs car il s’agit de la page d’accueil par défaut. Elle a pour
+                            principal objectif
+                            de proposer un contenu de qualité et diversifié pour correspondre au plus grand
+                            nombre de
+                            personnes. Le contenu de la page “Les plus populaires” et "les plus vus" est
+                            généré
+                            automatiquement. Pour cette raison, il est possible que certains des mixes mis
+                            en avant
+                            soient orientés par un nombre de visites accrus de certaines pages.
+                        </ul>
+                        <p><strong>Où trouver tous les Mixes d’un seul Genre ?</strong></p>
+
+                        <ul>Pour la plupart des genres, une page a été créée qui rassemble tous les Mixes
+                            qui le
+                            concerne. Vous pouvez également accéder à un Genre spécifique de plusieurs
+                            façons : Via le
+                            menu, en sélectionnant un Mix affiché parmi les plus populaires, ou en cliquant
+                            sur "Voir
+                            tout" pour afficher la liste complète.
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>- Me contacter -</h3>
+                    <div class="accordion-body">
+                        <p><strong>Comment puis-je contacter Jumperpich ?</strong></p>
+
+                        <ul>Vous pouvez adresser toutes vos questions et demandes d'informations directement
+                            via le
+                            formulaire de contact du site. Si vous voulez me faire un retour sur un
+                            dysfonctionnement ou
+                            un bug sur le site, n’hésitez pas à me contacter
+                        </ul>
+                    </div>
+                </div>
+
             {% else %}
-                <div class="accordion mt-4" id="accordionExample">
-                    <div class="container pt-4" style="min-height:100vh">
-                        <h6><abbr>QUESTIONS & ANSWERS</abbr></h6>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    General questions about the site
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>How does Jumperpich.com work?</strong></p>
 
-                                    <ul>Jumperpich is a platform for everyone to view and download Jumperpich's mixes
-                                        for
-                                        free. A sharing system, represented by the Share icon, allows you to share a mix
-                                        on
-                                        your Facebook newsfeed.
-                                    </ul>
-                                    <p><strong>Who can post mixes?</strong></p>
+                <div class="container pt-4" style="min-height:100vh">
+                    <h6><abbr>QUESTIONS & ANSWERS</abbr></h6>
+                    <h3>- General questions about the site -</h3>
+                    <div class="accordion-body">
+                        <p><strong>How does Jumperpich.com work?</strong></p>
 
-                                    <ul>Only the administrator, here Jumperpich. However the site is fully visitable by
-                                        everyone.
-                                    </ul>
-                                    <p><strong>Are the Mixes moderate / edited?</strong></p>
+                        <ul>Jumperpich is a platform for everyone to view and download Jumperpich's mixes
+                            for
+                            free. A sharing system, represented by the Share icon, allows you to share a mix
+                            on
+                            your Facebook newsfeed.
+                        </ul>
+                        <p><strong>Who can post mixes?</strong></p>
 
-                                    <ul>Mixes posted are subject to verification by me before publication.</ul>
-                                    <p><strong>How is Jumperpich.com funded?</strong></p>
+                        <ul>Only the administrator, here Jumperpich. However the site is fully visitable by
+                            everyone.
+                        </ul>
+                        <p><strong>Are the Mixes moderate / edited?</strong></p>
 
-                                    <ul>Jumperpich is entirely financed from my pocket. No amount of money is required
-                                        from
-                                        visitors. The passion of sharing above all :)
-                                    </ul>
-                                    <p><strong>How does Jumperpich work with his partners?</strong></p>
+                        <ul>Mixes posted are subject to verification by me before publication.</ul>
+                        <p><strong>How is Jumperpich.com funded?</strong></p>
 
-                                    <ul>I have no partners strictly speaking. The composers can send me their tracks so
-                                        that
-                                        I play them. However, if the sounds do not suit me, I have no obligation to play
-                                        them.
-                                    </ul>
-                                    <p><strong>How are the tracks proposed by partners different from
-                                            self-promotion?</strong></p>
+                        <ul>Jumperpich is entirely financed from my pocket. No amount of money is required
+                            from
+                            visitors. The passion of sharing above all :)
+                        </ul>
+                        <p><strong>How does Jumperpich work with his partners?</strong></p>
 
-                                    <ul>The tracks proposed directly by the composers are evaluated and filtered by
-                                        me.
-                                    </ul>
-                                    <p><strong>Can we know which composers are affiliated?</strong></p>
+                        <ul>I have no partners strictly speaking. The composers can send me their tracks so
+                            that
+                            I play them. However, if the sounds do not suit me, I have no obligation to play
+                            them.
+                        </ul>
+                        <p><strong>How are the tracks proposed by partners different from
+                                self-promotion?</strong></p>
 
-                                    <ul>No, simply because I want to maintain my neutrality. However a link to their
-                                        social
-                                        networks will be regularly present in the set description.
-                                    </ul>
-                                    <p><strong>Are there any equivalents to Jumperpich.com in other countries?</strong>
-                                    </p>
+                        <ul>The tracks proposed directly by the composers are evaluated and filtered by
+                            me.
+                        </ul>
+                        <p><strong>Can we know which composers are affiliated?</strong></p>
 
-                                    <ul>Yes of course ! I'm not the only one to offer this kind of platform.But there is
-                                        only one Jumperpich's site .
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Registration & account
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>Need to register ?</strong></p>
+                        <ul>No, simply because I want to maintain my neutrality. However a link to their
+                            social
+                            networks will be regularly present in the set description.
+                        </ul>
+                        <p><strong>Are there any equivalents to Jumperpich.com in other countries?</strong>
+                        </p>
 
-                                    <ul>You can visit all content on the site without registering. In addition, I
-                                        regularly
-                                        develop new features for visitors: alert creation, notifications, ability to
-                                        follow
-                                        other members and contact them via email Private ... Everything will be done so
-                                        that
-                                        members can customize their experience on the site.
-                                    </ul>
-                                    <p><strong>Will the registration have a cost?</strong></p>
+                        <ul>Yes of course ! I'm not the only one to offer this kind of platform.But there is
+                            only one Jumperpich's site .
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>- Registration & account -</h3>
+                    <div class="accordion-body">
+                        <p><strong>Need to register ?</strong></p>
 
-                                    <ul>No. The creation of an account on the site and the use of all functionalities is
-                                        and
-                                        will remain completely free.
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    Use Jumperpich.com
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>What is the "Most Popular" and "Most Viewed" tab on the
-                                            homepage?</strong></p>
+                        <ul>You can visit all content on the site without registering. In addition, I
+                            regularly
+                            develop new features for visitors: alert creation, notifications, ability to
+                            follow
+                            other members and contact them via email Private ... Everything will be done so
+                            that
+                            members can customize their experience on the site.
+                        </ul>
+                        <p><strong>Will the registration have a cost?</strong></p>
 
-                                    <ul>The "Most Popular" and "Most Visited" page is the entry point for new users as
-                                        it is
-                                        the default home page. Its main objective is to offer content from quality and
-                                        diverse to match the largest number of people. The contents of the "Most
-                                        Popular"
-                                        and "Most Viewed" pages are generated automatically. For this reason, it is
-                                        possible
-                                        that some of the mixes put forward are oriented by a number of increased visits
-                                        of
-                                        certain pages.
-                                    </ul>
-                                    <p><strong>Where to find all the Mixes of a single style?</strong></p>
+                        <ul>No. The creation of an account on the site and the use of all functionalities is
+                            and
+                            will remain completely free.
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>- Use Jumperpich.com -</h3>
+                    <div class="accordion-body">
+                        <p><strong>What is the "Most Popular" and "Most Viewed" tab on the
+                                homepage?</strong></p>
 
-                                    <ul>For most styles, a page has been created that brings together all Mixes which is
-                                        concerned . You can also access a specific style in several ways: Via the menu,
-                                        selecting a Mix displayed among the most popular, or in clicking on "View All"
-                                        to
-                                        display the complete list.
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <ul>The "Most Popular" and "Most Visited" page is the entry point for new users as
+                            it is
+                            the default home page. Its main objective is to offer content from quality and
+                            diverse to match the largest number of people. The contents of the "Most
+                            Popular"
+                            and "Most Viewed" pages are generated automatically. For this reason, it is
+                            possible
+                            that some of the mixes put forward are oriented by a number of increased visits
+                            of
+                            certain pages.
+                        </ul>
+                        <p><strong>Where to find all the Mixes of a single style?</strong></p>
 
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
-                                    Contact
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                 data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p><strong>How can I contact Jumperpich ?</strong></p>
+                        <ul>For most styles, a page has been created that brings together all Mixes which is
+                            concerned . You can also access a specific style in several ways: Via the menu,
+                            selecting a Mix displayed among the most popular, or in clicking on "View All"
+                            to
+                            display the complete list.
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3>- Contact -</h3>
+                    <div class="accordion-body">
+                        <p><strong>How can I contact Jumperpich ?</strong></p>
 
-                                    <ul>You can address all your questions and requests for information directly via the
-                                        contact form of the site. If you want to give me feedback on a malfunction or a
-                                        bug
-                                        on the site, Do not hesitate to contact me
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <ul>You can address all your questions and requests for information directly via the
+                            contact form of the site. If you want to give me feedback on a malfunction or a
+                            bug
+                            on the site, Do not hesitate to contact me
+                        </ul>
                     </div>
                 </div>
             {% endif %}
         </div>
-
     </div>
+
 {% endblock %}
