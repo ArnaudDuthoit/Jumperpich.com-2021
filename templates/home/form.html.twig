@@ -5,28 +5,24 @@
 {% block body %}
 
 
-
-    <div id="podcast" class="parallax-one"
-         style="background: #000 url('{{ asset('pictures/parallax4.jpg') }}') center no-repeat">
-        <div class="quote1-pattern" id="parallax-one"
-             style="background: url('{{ asset('pictures/services-banner.png') }}');">
-        </div>
-        <div class="row m-0">
-            <div>
-                <h1 class="parallax-title"><img src="{{ asset('pictures/contact.PNG') }}"></h1>
+    <div class="container-fluid pt-4">
+        <div id="podcast" class="parallax-one"
+             style="background: #000 url('{{ asset('pictures/parallax4.jpg') }}') center no-repeat">
+            <div class="quote1-pattern" id="parallax-one"
+                 style="background: url('{{ asset('pictures/services-banner.png') }}');">
+            </div>
+            <div class="row m-0">
+                <div>
+                    <h1 class="parallax-title"><img src="{{ asset('pictures/contact.PNG') }}"></h1>
+                </div>
             </div>
         </div>
     </div>
-
-
 
     <div class="container mt-4 text-dark shadow p-3 mb-5 bg-white rounded">
         {% for message in app.flashes('success') %}
             <div class="text-center alert alert-success alert-dismissible fade show" role="alert">
                 <strong>Succès !</strong> Formulaire envoyé avec succès !
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
             </div>
         {% endfor %}
 
@@ -51,9 +47,9 @@
             {{ form_row(form.message,{'attr': {'id' : 'form_message'}}) }}
             {{ form_row(form.Save) }}
             <fieldset class="sweet-candy">
-                {{ form_label(form.phone) }}
-                {{ form_errors(form.phone) }}
-                {{ form_widget(form.phone) }}
+                {{ form_label(form.phoneNumber) }}
+                {{ form_errors(form.phoneNumber) }}
+                {{ form_widget(form.phoneNumber) }}
             </fieldset>
 
             <fieldset class="sweet-candy">

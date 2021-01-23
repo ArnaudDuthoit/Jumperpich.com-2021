@@ -21,7 +21,7 @@ class HoneyPotType extends AbstractType
         $this->requestStack = $requestStack;
     }
 
-    protected const DELICIOUS_HONEY_CANDY_FOR_BOT = "phone";
+    protected const DELICIOUS_HONEY_CANDY_FOR_BOT = "phoneNumber";
 
     protected const FABULOUS_HONEY_CANDY_FOR_BOT = "faxNumber";
 
@@ -36,7 +36,7 @@ class HoneyPotType extends AbstractType
     {
         return [
             'attr' => [
-                'autocomplete' => 'off',
+                'autocomplete' => 'disabled',
                 'tabindex' => '-1'
             ],
             'mapped' => false,

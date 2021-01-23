@@ -39,17 +39,17 @@ class HoneyPotSubscriber implements EventSubscriberInterface
 
         $data = $event->getData();
 
-        if (!array_key_exists('phone', $data) || !array_key_exists('faxNumber', $data)) {
+        if (!array_key_exists('phoneNumber', $data) || !array_key_exists('faxNumber', $data)) {
             throw new HttpException(400, "Don't touch my form please!");
         }
 
         [
-            'phone' => $phone,
+            'phoneNumber' => $phoneNumber,
             'faxNumber' => $faxNumber
         ] = $data;
 
-        if ($phone !== "" || $faxNumber !== "") {
-            $this->honeyPotLogger->info("Une potentielle tentative de robot spammeur ayant l'adresse IP suivante '{$request->getClientIp()}' a eu lieu. Le champ phone contenait '${phone}' ET le champ faxNumber contenait '{$faxNumber}'.");
+        if ($phoneNumber !== "" || $faxNumber !== "") {
+            $this->honeyPotLogger->info("Une potentielle tentative de robot spammeur ayant l'adresse IP suivante '{$request->getClientIp()}' a eu lieu. Le champ phone contenait '${phoneNumber}' ET le champ faxNumber contenait '{$faxNumber}'.");
             throw new HttpException(403, "Go away bot !");
         }
     }
