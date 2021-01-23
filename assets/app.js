@@ -53,6 +53,16 @@ if (document.querySelector('#form_message') !== null) { // si le formulaire de c
 }
 
 
+(function() {
+    var css = document.createElement('link');
+    css.href = 'https://use.fontawesome.com/releases/v5.8.1/css/all.css';
+    css.rel = 'stylesheet';
+    css.type = 'text/css';
+    document.getElementsByTagName('head')[0].appendChild(css);
+})();
+
+
+
 const cookieContainer = document.querySelector(".cookie-container");
 const cookieButton = document.querySelector(".cookie-btn");
 
@@ -97,7 +107,6 @@ function scrollToTop() {
     })
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
-
 
 
 
