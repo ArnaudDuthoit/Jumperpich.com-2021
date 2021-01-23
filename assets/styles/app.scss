@@ -243,13 +243,24 @@ a[aria-expanded=false] .fa-chevron-down {
     border-radius: 50%
 }
 
-.back-to-top {
-    cursor: pointer;
+#back-to-top {
+    display: inline-block;
+    text-align: center;
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 30px;
-    display: none;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
 }
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .mix .link:hover .middle {
     opacity: .7;
