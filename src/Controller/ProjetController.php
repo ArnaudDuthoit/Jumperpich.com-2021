@@ -46,7 +46,8 @@ class ProjetController extends AbstractController
         $form->handleRequest($request);
         $projets = $repository->findSearch($data);
 
-        if ($request->get('ajax')) {
+
+        if ($request->get('ajax') || $request->isXmlHttpRequest()) {
             return new JsonResponse([
                 'content' => $this->renderView('projet/_projets.html.twig', ['projets' => $projets]),
                 'sorting' => $this->renderView('projet/_sorting.html.twig', ['projets' => $projets]),

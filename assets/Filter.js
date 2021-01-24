@@ -87,10 +87,10 @@ export default class Filter {
     async loadUrl(url, append = false) {
 
         const params = new URLSearchParams(url.split('?')[1] || '');
-        params.set('ajax', '1');
+        params.set('ajax', 'ajax');
         const response = await fetch(url.split('?')[0] + '?' + params.toString(), {
             headers: {
-                'X-Requested-With': 'XMLHttpRequest'
+                'X-Requested-With': 'XMLHttpRequest',
             }
         });
 
@@ -107,8 +107,10 @@ export default class Filter {
             } else {
                 this.pagination.style.display = null;
             }
+
             params.delete('ajax')
             history.replaceState({},'', url.split('?')[0] + '?' + params.toString())
+
         } else {
             const x = document.getElementById("snackbar");
             x.className = "show";
