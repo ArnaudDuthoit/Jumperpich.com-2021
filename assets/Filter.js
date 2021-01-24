@@ -110,7 +110,11 @@ export default class Filter {
             params.delete('ajax')
             history.replaceState({},'', url.split('?')[0] + '?' + params.toString())
         } else {
+            const x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
             console.error(response)
+
         }
 
     }

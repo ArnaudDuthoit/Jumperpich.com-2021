@@ -121,6 +121,18 @@
     "gregwar/captcha-bundle": {
         "version": "v2.0.6"
     },
+    "illuminate/collections": {
+        "version": "v8.24.0"
+    },
+    "illuminate/contracts": {
+        "version": "v8.24.0"
+    },
+    "illuminate/macroable": {
+        "version": "v8.24.0"
+    },
+    "illuminate/support": {
+        "version": "v8.24.0"
+    },
     "imagine/imagine": {
         "version": "v0.7.1"
     },
@@ -164,6 +176,9 @@
     "myclabs/deep-copy": {
         "version": "1.9.1"
     },
+    "nesbot/carbon": {
+        "version": "2.43.0"
+    },
     "nikic/php-parser": {
         "version": "v4.2.1"
     },
@@ -178,6 +193,33 @@
     },
     "php": {
         "version": "7.3"
+    },
+    "php-flasher/flasher": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-laravel": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-sweet-alert": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-sweet-alert-laravel": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-sweet-alert-symfony": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-symfony": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-toastr": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-toastr-laravel": {
+        "version": "v0.1.5"
+    },
+    "php-flasher/flasher-toastr-symfony": {
+        "version": "v0.1.5"
     },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
@@ -735,6 +777,9 @@
         "files": [
             "./config/packages/vich_uploader.yaml"
         ]
+    },
+    "voku/portable-ascii": {
+        "version": "1.5.6"
     },
     "webmozart/assert": {
         "version": "1.4.0"
