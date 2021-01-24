@@ -86,6 +86,11 @@ export default class Filter {
 
     async loadUrl(url, append = false) {
 
+
+        for (var i = 0; i < document.querySelectorAll('.sort').length; i++) {
+            document.querySelectorAll('.sort')[i].classList.add('disabled');
+        }
+
         const params = new URLSearchParams(url.split('?')[1] || '');
         params.set('ajax', 'ajax');
         const response = await fetch(url.split('?')[0] + '?' + params.toString(), {
