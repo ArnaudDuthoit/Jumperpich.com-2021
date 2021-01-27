@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/SitemapController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sitemap/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/app.fc490c71.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/update.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -214,7 +215,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../bin/php/php7.4.9/php.exe" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+    <property name="settings.editor.selected.configurable" value="xml.defaultSchemas" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -299,7 +300,8 @@
       <workItem from="1611425272091" duration="93000" />
       <workItem from="1611426831888" duration="8581000" />
       <workItem from="1611437622071" duration="172000" />
-      <workItem from="1611480091197" duration="14839000" />
+      <workItem from="1611480091197" duration="15671000" />
+      <workItem from="1611777133784" duration="3808000" />
     </task>
     <servers />
   </component>
@@ -352,10 +354,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="552" y="228" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1611263693032" />
-    <state x="277" y="56" key="SettingsEditor" timestamp="1611262919076">
+    <state x="326" y="112" key="SettingsEditor" timestamp="1611779622440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611262919076" />
+    <state x="326" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611779622440" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1610806216197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -364,17 +366,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611437243478" />
-    <state x="95" y="201" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611416436908">
+    <state x="95" y="201" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1611502969728">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="95" y="201" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611416436908" />
+    <state x="95" y="201" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1611502969728" />
+    <state x="299" y="161" key="com.intellij.javaee.MapExternalResourceDialog" timestamp="1611779583317">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="161" key="com.intellij.javaee.MapExternalResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1611779583317" />
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1611260230638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1611260230638" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611434656685">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611778651020">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611434656685" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611778651020" />
   </component>
 </project>

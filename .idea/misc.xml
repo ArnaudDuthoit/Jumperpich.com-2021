@@ -3,4 +3,7 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectResources">
+    <resource url="http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" location="$PROJECT_DIR$" />
+  </component>
 </project>
