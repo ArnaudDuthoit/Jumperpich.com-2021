@@ -9,15 +9,17 @@
     <meta property="og:title" content="{{ projet.title }}"/>
     <meta property="og:description"
           content="♬ Click for Tracklist & Download ♬"/>
+    <meta property="fb:app_id" content="858188235026427" />
     <meta property="og:image"
-          content="https://jumperpich.com/{{ vich_uploader_asset(projet, 'imageFile') }}"/>
+          content="https://jumperpich.com{{ vich_uploader_asset(projet, 'imageFile') }}"/>
 {% endblock %}
 
 {% block body %}
 
+
     <div class="container-fluid main pt-4 mt-4">
 
-        <div class="container text-center shadow roundedpt-4">
+        <div class="container text-center shadow rounded pt-4">
             <div class="Blog-meta my-4">
                 {{ projet.createdAt | date('d/m/Y') }} - {% for tag in projet.tags %}{{ tag.name }}{% endfor %}
             </div>
@@ -114,14 +116,14 @@
                         <div class="text-center">
 
                             <div class="logo-social"><a
-                                        href="https://www.facebook.com/dialog/share?app_id=377287179598756&display=popup&href=https://www.jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                        href="https://www.facebook.com/dialog/share?app_id=858188235026427&display=popup&href=https://jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
                                         target="blank">
                                     <img src="{{ asset('pictures/facebook.jpg') }}" style="width:87%"
                                          alt="Facebook"></a>
                             </div>
 
                             <div class="logo-social"><a
-                                        href="https://twitter.com/share?url=https://www.jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
+                                        href="https://twitter.com/share?url=https://jumperpich.com{{ path('projet.show', {'id': projet.id, "slug": projet.slug}) }}"
                                         target="blank">
                                     <img src="{{ asset('pictures/twitter.jpg') }}" style="width:87%" alt="Twitter"></a>
                             </div>

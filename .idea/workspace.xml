@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/SitemapController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sitemap/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/update.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pagination/pagination.sortable.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,7 +297,8 @@
       <workItem from="1611426831888" duration="8581000" />
       <workItem from="1611437622071" duration="172000" />
       <workItem from="1611480091197" duration="15671000" />
-      <workItem from="1611777133784" duration="3808000" />
+      <workItem from="1611777133784" duration="3996000" />
+      <workItem from="1613206765496" duration="2909000" />
     </task>
     <servers />
   </component>
