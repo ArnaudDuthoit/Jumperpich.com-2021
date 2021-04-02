@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: arnau
- * Date: 16/12/2019
- * Time: 11:28
- */
 
 namespace App\Data;
-
 
 class SearchData
 {
@@ -21,10 +14,4 @@ class SearchData
      * @var array
      */
     public $Tags = [];
-
-
-
-
-
-
 }

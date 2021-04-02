@@ -7,7 +7,7 @@
         "ext-iconv": "*",
         "ext-json": "*",
         "cocur/slugify": "^3.2",
-        "easycorp/easyadmin-bundle": "^2.3",
+        "easycorp/easyadmin-bundle": "^3.0",
         "google/recaptcha": "^1.2",
         "knplabs/knp-paginator-bundle": "^5.4.2",
         "liip/imagine-bundle": "^2.4",

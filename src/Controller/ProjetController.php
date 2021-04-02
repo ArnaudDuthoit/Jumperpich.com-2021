@@ -6,6 +6,7 @@ namespace App\Controller;
 use App\Data\SearchData;
 use App\Entity\Projet;
 use App\Form\SearchForm;
+use App\Form\SearchFormType;
 use App\Repository\ProjetRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -42,7 +43,7 @@ class ProjetController extends AbstractController
         $data = new SearchData();
 
         $data->page = $request->get('page', 1);
-        $form = $this->createForm(SearchForm::class, $data);
+        $form = $this->createForm(SearchFormType::class, $data);
         $form->handleRequest($request);
         $projets = $repository->findSearch($data);
 

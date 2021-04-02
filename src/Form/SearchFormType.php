@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: arnau
- * Date: 16/12/2019
- * Time: 11:31
- */
 
 namespace App\Form;
-
 
 use App\Data\SearchData;
 use App\Entity\Tag;
@@ -17,7 +10,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class SearchForm extends AbstractType
+class SearchFormType extends AbstractType
 {
 
     public function buildForm(FormBuilderInterface $builder, array $options)
