@@ -30,7 +30,8 @@ class MixesCrudController extends AbstractCrudController
         return $crud
             ->setPageTitle(Crud::PAGE_INDEX, 'Liste des Mixes')
             ->setPageTitle(Crud::PAGE_NEW, 'Ajouter nouveau Mix')
-            ->setSearchFields(['id', 'filename', 'mp3filename', 'title', 'description', 'YTB_link', 'views', 'downloadCount', 'soundcloud', 'fileSize', 'fileLength', 'mixcloud']);
+            ->setSearchFields(['id', 'filename', 'mp3filename', 'title', 'description', 'YTB_link', 'views', 'downloadCount', 'soundcloud', 'fileSize', 'fileLength', 'mixcloud'])
+            ->setDefaultSort(['created_at' => 'DESC']);
     }
 
     public function configureFields(string $pageName): iterable

@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210403140109.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/MixeSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ContactCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ContactCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/TagCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/TagCrudController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminProjetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminProjetController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Projet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Projet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Soon.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/SoonFormType.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20210116145649.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SoonRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/NewMessages.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin_projet/charts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_projet/charts.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/projet/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +323,7 @@
       <workItem from="1617381124453" duration="2332000" />
       <workItem from="1617439577661" duration="7000" />
       <workItem from="1617453751152" duration="6635000" />
-      <workItem from="1617460931796" duration="6235000" />
+      <workItem from="1617460931796" duration="13374000" />
     </task>
     <task id="LOCAL-00001" summary="Upgrade EasyAdmin 2 vers Easy Admin 3">
       <created>1617383422880</created>
@@ -346,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617383422880</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix : Admin CRUD&#10;Update entité Projet">
+      <created>1617467586938</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617467586938</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +354,8 @@
       <path value="$PROJECT_DIR$/Jumperpich.com" />
     </ignored-roots>
     <MESSAGE value="Upgrade EasyAdmin 2 vers Easy Admin 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade EasyAdmin 2 vers Easy Admin 3" />
+    <MESSAGE value="Fix : Admin CRUD&#10;Update entité Projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix : Admin CRUD&#10;Update entité Projet" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

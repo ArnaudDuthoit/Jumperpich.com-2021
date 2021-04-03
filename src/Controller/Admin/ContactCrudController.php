@@ -10,6 +10,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
 class ContactCrudController extends AbstractCrudController
@@ -25,7 +26,8 @@ class ContactCrudController extends AbstractCrudController
             ->setEntityLabelInSingular('Contact')
             ->setEntityLabelInPlural('Contact')
             ->setPageTitle(Crud::PAGE_INDEX, 'Liste des Messages reçus')
-            ->setSearchFields(['id', 'name', 'email', 'subject', 'message']);
+            ->setSearchFields(['id', 'name', 'email', 'subject', 'message'])
+            ->setDefaultSort(['createdAt' => 'DESC']);
     }
 
     public function configureActions(Actions $actions): Actions
@@ -40,7 +42,7 @@ class ContactCrudController extends AbstractCrudController
         $name = TextField::new('name', 'Nom');
         $email = EmailField::new('email', 'Email');
         $subject = TextField::new('subject', 'Objet');
-        $message = TextField::new('message', 'Message');
+        $message = TextEditorField::new('message', 'Message');
         $createdAt = DateTimeField::new('createdAt', "Reçu le");
         $updatedAt = DateTimeField::new('updatedAt');
         $id = IntegerField::new('id', 'ID');

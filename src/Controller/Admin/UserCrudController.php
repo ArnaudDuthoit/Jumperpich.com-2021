@@ -10,6 +10,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
+use function Sodium\add;
 
 class UserCrudController extends AbstractCrudController
 {
@@ -29,9 +30,24 @@ class UserCrudController extends AbstractCrudController
 
     public function configureActions(Actions $actions): Actions
     {
+
+        $detailUser = Action::new('detailUser', 'Detail', 'fa fa-user')
+            ->linkToCrudAction(Crud::PAGE_DETAIL)
+            ->addCssClass('btn btn-info');
+
+        $resetpassword = Action::new('resetpassword', 'Reset mdp', 'fas fa-key')
+            ->linkToRoute('app_forgot_password_request')
+            ->addCssClass('btn btn-danger');
+
+
         return $actions
-            ->disable(Action::DELETE);
+            ->setPermission(Action::NEW, 'ROLE_ADMIN')
+            ->setPermission(Action::EDIT, 'ROLE_ADMIN')
+            ->disable(Action::DELETE)
+            ->add(Crud::PAGE_INDEX, $detailUser)
+            ->add(Crud::PAGE_INDEX, $resetpassword);
     }
+
 
     public function configureFields(string $pageName): iterable
     {

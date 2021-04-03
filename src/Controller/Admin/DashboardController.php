@@ -10,9 +10,11 @@ use App\Repository\ProjetRepository;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
+use EasyCorp\Bundle\EasyAdminBundle\Config\UserMenu;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 class DashboardController extends AbstractDashboardController
 {
@@ -42,7 +44,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
 
 
-        yield MenuItem::section('Administration Mixes', 'fas fa-folder-open');
+        yield MenuItem::section('Gérer Mixes', 'fas fa-folder-open');
         yield MenuItem::linkToCrud('Mixes', 'fas fa-music', Projet::class);
         yield MenuItem::linkToCrud('Tags', 'fas fa-tag', Tag::class);
 
@@ -51,7 +53,13 @@ class DashboardController extends AbstractDashboardController
 
         yield MenuItem::section('Mon compte', 'fas fa-folder-open');
         yield MenuItem::linkToCrud('Modifier les identifiants', 'fas fa-user', User::class);
-        yield MenuItem::linktoRoute('Reset mot de passe', 'fas fa-key', 'app_forgot_password_request');
+    }
+
+
+    public function configureUserMenu(UserInterface $user): UserMenu
+    {
+        return parent::configureUserMenu($user)
+            ->setAvatarUrl('https://arnaudduthoit.fr/wp-content/uploads/2021/01/Arnaud-Duthoit-Photo-Profil-150x150.jpg');
     }
 
     /**

@@ -123,7 +123,7 @@ class Projet
     private $isOnline;
 
     /**
-     * @ORM\Column(type="text", length=1500)
+     * @ORM\Column(type="text", length=1500, nullable=true)
      */
     private $iframeSoundcloud;
 
@@ -407,7 +407,7 @@ class Projet
         return $this->iframeSoundcloud;
     }
 
-    public function setIframeSoundcloud(string $iframeSoundcloud): self
+    public function setIframeSoundcloud(?string $iframeSoundcloud): self
     {
         $this->iframeSoundcloud = $iframeSoundcloud;
 
