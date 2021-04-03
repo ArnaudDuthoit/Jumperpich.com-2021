@@ -2,146 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_17_03_2021_19_58.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/easyadmin-config.backup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.2f12242375edd68e9013ecfb59c672e9.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.8300bd7f.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.8300bd7f30e0a313c1d772b49d96cb8e.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.ad527cc5.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.ad527cc5ec23d6da66e8a1d6772ea6d3.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.e2ca6541.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.e2ca6541bff3a3e9f4799ee327b28c58.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.f075c50f.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.f075c50f89795e4cdb4d45b51f1a6800.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.3602b7e8b2cb1462b0bef9738757ef8a.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.3c6879c4.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.3c6879c4f342203d099bdd66dce6d396.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.49f00693.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.49f00693b0e5d45097832ef5ea1bc541.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.4a74738e.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.4a74738e7728e93c4394b8604081da62.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.b01516c1.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.b01516c1808be557667befec76cd6318.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.205f07b3.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.205f07b3883c484f27f40d21a92950d4.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.4451e1d8.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.4451e1d86df7491dd874f2c41eee1053.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.664de3932dd6291b4b8a8c0ddbcb4c61.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.8ac31674.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.8ac3167427b1d5d2967646bd8f7a0587.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.8e1ed89b.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.8e1ed89b6ccb8ce41faf5cb672677105.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-collection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-slug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-textarea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/images/fa-brands-400.2f122423.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/images/fa-regular-400.3602b7e8.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/images/fa-solid-900.664de393.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bundles/easyadmin/images/flags/UNKNOWN.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/ContactCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/TagCrudController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Jumperpich.com.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Jumperpich.com.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210403140109.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/app-custom-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/app-custom-rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/app.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/app.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/entrypoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.13685372.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.a06da7f0.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.c1868c95.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-brands-400.ec3cfdde.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.261d666b.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.c20b5b73.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.db78b935.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-regular-400.f89ea91e.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.1ab236ed.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.a0369ea5.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.b15db15f.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/fonts/fa-solid-900.bea989e8.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-code-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-code-editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-code-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-code-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-code-editor.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-code-editor.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-text-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-text-editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-text-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-text-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-text-editor.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/form-type-text-editor.rtl.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/images/fa-brands-400.0cb5a5c0.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/images/fa-regular-400.89ffa3ab.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/images/fa-solid-900.ec763292.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/bn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/dsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/dsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hsb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hsb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hy.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/hy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ne.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ps.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sr-Cyrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sr-Cyrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/tk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/tk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/zh-TW.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/select2/i18n/zh-TW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ContactCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ContactCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/TagCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/TagCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminProjetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Data/SearchData.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/SearchData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/SearchForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SearchFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Projet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Projet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Soon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Tag.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SoonFormType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20210116145649.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProjetRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/SoonRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/NewMessages.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/admin_projet/charts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_projet/charts.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +60,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -443,8 +334,19 @@
       <workItem from="1616007739656" duration="64000" />
       <workItem from="1616007985819" duration="461000" />
       <workItem from="1616771090046" duration="398000" />
-      <workItem from="1617381124453" duration="1986000" />
+      <workItem from="1617381124453" duration="2332000" />
+      <workItem from="1617439577661" duration="7000" />
+      <workItem from="1617453751152" duration="6635000" />
+      <workItem from="1617460931796" duration="6235000" />
     </task>
+    <task id="LOCAL-00001" summary="Upgrade EasyAdmin 2 vers Easy Admin 3">
+      <created>1617383422880</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617383422880</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,6 +360,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/Jumperpich.com" />
     </ignored-roots>
+    <MESSAGE value="Upgrade EasyAdmin 2 vers Easy Admin 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade EasyAdmin 2 vers Easy Admin 3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

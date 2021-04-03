@@ -5,7 +5,6 @@ namespace App\Controller;
 
 use App\Data\SearchData;
 use App\Entity\Projet;
-use App\Form\SearchForm;
 use App\Form\SearchFormType;
 use App\Repository\ProjetRepository;
 use Doctrine\ORM\EntityManagerInterface;

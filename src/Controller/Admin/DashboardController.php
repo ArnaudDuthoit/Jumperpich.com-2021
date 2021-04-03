@@ -6,6 +6,7 @@ use App\Entity\Contact;
 use App\Entity\Projet;
 use App\Entity\Tag;
 use App\Entity\User;
+use App\Repository\ProjetRepository;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
@@ -15,6 +16,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DashboardController extends AbstractDashboardController
 {
+    protected $projetRepository;
+
+    public function __construct(
+        ProjetRepository $projetRepository
+    ) {
+        $this->projetRepository = $projetRepository;
+    }
+
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
@@ -28,14 +37,10 @@ class DashboardController extends AbstractDashboardController
 
     public function configureMenuItems(): iterable
     {
-        $submenu1 = [
-            MenuItem::linkToCrud('Modifier les identifiants', 'fas fa-user', User::class),
-            MenuItem::linktoRoute('Reset mot de passe', 'fas fa-key', 'app_forgot_password_request'),
-            MenuItem::linktoRoute('Supprimer le compte', 'fas fa-trash-alt', 'user.deleteprofile'),
-        ];
+        yield MenuItem::linktoRoute('Visiter le site', 'fas fa-home', 'home')->setLinkTarget('_blank');
 
-        yield MenuItem::section('Site', 'fas fa-folder-open');
-        yield MenuItem::linktoRoute('Homepage', 'fas fa-home', 'home')->setLinkTarget('_blank');
+        yield MenuItem::linkToDashboard('Dashboard', 'fa fa-home');
+
 
         yield MenuItem::section('Administration Mixes', 'fas fa-folder-open');
         yield MenuItem::linkToCrud('Mixes', 'fas fa-music', Projet::class);
@@ -44,8 +49,9 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::section('Messages', 'fas fa-folder-open');
         yield MenuItem::linkToCrud('Messages reçus', 'fas fa-envelope', Contact::class);
 
-        yield MenuItem::section('Account', 'fas fa-folder-open');
-        yield MenuItem::subMenu('Données Utilisateur', 'fas fa-exclamation')->setSubItems($submenu1);
+        yield MenuItem::section('Mon compte', 'fas fa-folder-open');
+        yield MenuItem::linkToCrud('Modifier les identifiants', 'fas fa-user', User::class);
+        yield MenuItem::linktoRoute('Reset mot de passe', 'fas fa-key', 'app_forgot_password_request');
     }
 
     /**

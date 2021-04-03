@@ -3,9 +3,12 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Contact;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
@@ -25,13 +28,20 @@ class ContactCrudController extends AbstractCrudController
             ->setSearchFields(['id', 'name', 'email', 'subject', 'message']);
     }
 
+    public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+            ->disable(Action::EDIT, Action::NEW);
+    }
+
+
     public function configureFields(string $pageName): iterable
     {
-        $name = TextField::new('name');
-        $email = TextField::new('email');
-        $subject = TextField::new('subject');
-        $message = TextField::new('message');
-        $createdAt = DateTimeField::new('createdAt');
+        $name = TextField::new('name', 'Nom');
+        $email = EmailField::new('email', 'Email');
+        $subject = TextField::new('subject', 'Objet');
+        $message = TextField::new('message', 'Message');
+        $createdAt = DateTimeField::new('createdAt', "Reçu le");
         $updatedAt = DateTimeField::new('updatedAt');
         $id = IntegerField::new('id', 'ID');
 

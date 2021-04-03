@@ -51,6 +51,7 @@ class Projet
      * @var File|null
      * @Assert\File(
      *     maxSize = "1024000k",
+     *     mimeTypes= {"audio/mpeg", "audio/mp3"}
      * )
      * @Vich\UploadableField(mapping="projet_mp3", fileNameProperty="mp3filename")
      */
@@ -117,9 +118,14 @@ class Projet
     private $fileLength;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
+     * @ORM\Column(type="boolean")
      */
-    private $mixcloud;
+    private $isOnline;
+
+    /**
+     * @ORM\Column(type="text", length=1500)
+     */
+    private $iframeSoundcloud;
 
 
     public function __construct()
@@ -372,17 +378,6 @@ class Projet
         return $this;
     }
 
-    public function getMixcloud(): ?string
-    {
-        return $this->mixcloud;
-    }
-
-    public function setMixcloud(?string $mixcloud): self
-    {
-        $this->mixcloud = $mixcloud;
-
-        return $this;
-    }
 
     public function __toString()
     {
@@ -393,6 +388,30 @@ class Projet
     {
         return $this->filename;
 
+    }
+
+    public function getIsOnline(): ?bool
+    {
+        return $this->isOnline;
+    }
+
+    public function setIsOnline(bool $isOnline): self
+    {
+        $this->isOnline = $isOnline;
+
+        return $this;
+    }
+
+    public function getIframeSoundcloud(): ?string
+    {
+        return $this->iframeSoundcloud;
+    }
+
+    public function setIframeSoundcloud(string $iframeSoundcloud): self
+    {
+        $this->iframeSoundcloud = $iframeSoundcloud;
+
+        return $this;
     }
 
 }

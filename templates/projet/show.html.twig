@@ -42,7 +42,7 @@
                 <h6><abbr>Tracklist</abbr></h6>
 
                 <div class="BlogItem-tracklist text-center">
-                    {{ projet.description | nl2br }}
+                    {{ projet.description | raw }}
                 </div>
             </div>
 
@@ -100,8 +100,8 @@
 
                 <div class="my-4 pt-4">
 
-                    {% if projet.mixcloud %}
-                        {{ projet.mixcloud | raw }}
+                    {% if projet.iframeSoundcloud %}
+                        {{ projet.iframeSoundcloud | raw }}
                     {% endif %}
                 </div>
 

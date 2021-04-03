@@ -21,26 +21,25 @@ class TagCrudController extends AbstractCrudController
         return $crud
             ->setEntityLabelInSingular('Tag')
             ->setEntityLabelInPlural('Tag')
-            ->setPageTitle(Crud::PAGE_INDEX, 'Liste des Tags')
+            ->setPageTitle(Crud::PAGE_INDEX, 'Liste des Catégories')
             ->setPageTitle(Crud::PAGE_NEW, 'Ajouter nouveau genre')
-            ->setSearchFields(['id', 'name', 'color']);
+            ->setSearchFields(['id', 'name']);
     }
 
     public function configureFields(string $pageName): iterable
     {
-        $name = TextareaField::new('name');
-        $color = TextareaField::new('color');
+        $name = TextareaField::new('name', 'Nom');
         $id = IntegerField::new('id', 'ID');
-        $projets = AssociationField::new('projets');
+        $projets = AssociationField::new('projets', "Mixes");
 
         if (Crud::PAGE_INDEX === $pageName) {
-            return [$id, $name, $color];
+            return [$name, $projets];
         } elseif (Crud::PAGE_DETAIL === $pageName) {
-            return [$id, $name, $color, $projets];
+            return [$id, $name, $projets];
         } elseif (Crud::PAGE_NEW === $pageName) {
-            return [$name, $color];
+            return [$name];
         } elseif (Crud::PAGE_EDIT === $pageName) {
-            return [$name, $color];
+            return [$name];
         }
     }
 }

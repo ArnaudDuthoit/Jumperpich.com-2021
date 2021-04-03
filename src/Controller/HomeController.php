@@ -4,7 +4,6 @@ namespace App\Controller;
 
 
 use App\Repository\ProjetRepository;
-use App\Repository\SoonRepository;
 use DateTime;
 use Exception;
 use ReCaptcha\ReCaptcha;
@@ -41,14 +40,12 @@ class HomeController extends AbstractController
      * Home Page
      * @Route("/", name="home")
      * @param ProjetRepository $repository
-     * @param SoonRepository $soonRepository
      * @return Response
      */
-    public function index(ProjetRepository $repository, SoonRepository $soonRepository)
+    public function index(ProjetRepository $repository)
     {
 
 
-        $soon = $soonRepository->findAll();
 
         $last = $repository->findLatest();
         $views = $repository->findViewest();
@@ -60,7 +57,6 @@ class HomeController extends AbstractController
             return $this->render('home/home.html.twig', [
                 'last' => $last,
                 'views' => $views,
-                'soon' => $soon,
                 'current_menu' => 'home'
             ]);
         }

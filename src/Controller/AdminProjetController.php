@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Repository\ProjetRepository;
-use App\Repository\SoonRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -15,15 +14,11 @@ class AdminProjetController extends AbstractController
      */
     private $repository;
 
-    /**
-     * @var SoonRepository
-     */
-    private $soonrepository;
 
-    public function __construct(ProjetRepository $repository , SoonRepository $soonRepository)
+
+    public function __construct(ProjetRepository $repository)
     {
         $this->repository = $repository;
-        $this->soonrepository = $soonRepository;
 
     }
 

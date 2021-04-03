@@ -38,6 +38,7 @@ class ProjetRepository extends ServiceEntityRepository
     {
 
         return $this->createQueryBuilder('p')
+            ->where('p.isOnline = true')
             ->orderBy('p.created_at', 'DESC')
             ->setMaxResults(6)
             ->getQuery()
@@ -53,6 +54,7 @@ class ProjetRepository extends ServiceEntityRepository
     {
 
         return $this->createQueryBuilder('p')
+            ->where('p.isOnline = true')
             ->orderBy('p.views', 'DESC')
             ->setMaxResults(6)
             ->getQuery()
@@ -80,6 +82,7 @@ class ProjetRepository extends ServiceEntityRepository
         $query = $this
             ->createQueryBuilder('p')
             ->select('tag', 'p')
+            ->where('p.isOnline = true')
             ->orderBy('p.created_at', 'DESC')
             ->join('p.tags', 'tag');
 

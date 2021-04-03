@@ -3,6 +3,8 @@
 namespace App\Controller\Admin;
 
 use App\Entity\User;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
@@ -23,6 +25,12 @@ class UserCrudController extends AbstractCrudController
             ->setEntityLabelInPlural('User')
             ->setPageTitle(Crud::PAGE_INDEX, 'Liste des Utilisateurs')
             ->setSearchFields(['id', 'email', 'username', 'role', 'Active', 'RegistrationToken', 'resetToken']);
+    }
+
+    public function configureActions(Actions $actions): Actions
+    {
+        return $actions
+            ->disable(Action::DELETE);
     }
 
     public function configureFields(string $pageName): iterable
