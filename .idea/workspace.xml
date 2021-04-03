@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/MixeSubscriber.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ContactCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ContactCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/UserCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminProjetController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Projet.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Projet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/mentions.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/mentions.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +322,8 @@
       <workItem from="1617381124453" duration="2332000" />
       <workItem from="1617439577661" duration="7000" />
       <workItem from="1617453751152" duration="6635000" />
-      <workItem from="1617460931796" duration="13374000" />
+      <workItem from="1617460931796" duration="15067000" />
+      <workItem from="1617480475393" duration="2078000" />
     </task>
     <task id="LOCAL-00001" summary="Upgrade EasyAdmin 2 vers Easy Admin 3">
       <created>1617383422880</created>
@@ -339,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617467586938</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix : Admin CRUD auto sort du plus récent au plus ancien&#10;Fix : Admin CRUD set User connecté à l'ajout d'un mix">
+      <created>1617477432673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617477432673</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +362,8 @@
     </ignored-roots>
     <MESSAGE value="Upgrade EasyAdmin 2 vers Easy Admin 3" />
     <MESSAGE value="Fix : Admin CRUD&#10;Update entité Projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix : Admin CRUD&#10;Update entité Projet" />
+    <MESSAGE value="Fix : Admin CRUD auto sort du plus récent au plus ancien&#10;Fix : Admin CRUD set User connecté à l'ajout d'un mix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix : Admin CRUD auto sort du plus récent au plus ancien&#10;Fix : Admin CRUD set User connecté à l'ajout d'un mix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

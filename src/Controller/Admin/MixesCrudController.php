@@ -3,6 +3,10 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Projet;
+use App\Repository\ProjetRepository;
+use Doctrine\ORM\EntityManagerInterface;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
@@ -15,6 +19,9 @@ use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 use phpDocumentor\Reflection\Types\Boolean;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 use Vich\UploaderBundle\Form\Type\VichFileType;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 
@@ -24,6 +31,50 @@ class MixesCrudController extends AbstractCrudController
     {
         return Projet::class;
     }
+
+
+    /**
+     * Page with all the details of the project
+     * @Route("/mix/{slug}-{id}", name="projet.show", requirements={"slug": "[a-z0-9\-]*"})
+     * @param Projet $projet
+     * @param string $slug
+     * @param EntityManagerInterface $manager
+     * @return RedirectResponse|Response
+     */
+    public function show(Projet $projet, string $slug, EntityManagerInterface $manager)
+    {
+        return $this->redirectToRoute('projet.show', [
+            'id' => $projet->getId(),
+            'slug' => $projet->getSlug()
+        ]);
+    }
+
+
+    public function configureActions(Actions $actions): Actions
+    {
+
+        $detailMix = Action::new('detailMix', 'Detail', 'far fa-plus-square')
+            ->linkToCrudAction(Crud::PAGE_DETAIL)
+            ->addCssClass('btn btn-info');
+
+        $voirMix = Action::new('voirMix', 'Voir sur le site', 'fas fa-external-link-alt')
+            ->linkToRoute('projet.show', function (Projet $projet) {
+                return [
+                    'id' => $projet->getId(),
+                    'slug' => $projet->getSlug()
+                ];
+            })
+            ->addCssClass('btn btn-success');
+
+
+        return $actions
+            ->setPermission(Action::NEW, 'ROLE_ADMIN')
+            ->setPermission(Action::EDIT, 'ROLE_ADMIN')
+            ->disable(Action::DELETE)
+            ->add(Crud::PAGE_INDEX, $detailMix)
+            ->add(Crud::PAGE_INDEX, $voirMix);
+    }
+
 
     public function configureCrud(Crud $crud): Crud
     {

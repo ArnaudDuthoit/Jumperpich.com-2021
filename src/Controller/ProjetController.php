@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-
 use App\Data\SearchData;
 use App\Entity\Projet;
 use App\Form\SearchFormType;
@@ -38,7 +37,6 @@ class ProjetController extends AbstractController
      */
     public function index(ProjetRepository $repository, Request $request)
     {
-
         $data = new SearchData();
 
         $data->page = $request->get('page', 1);
@@ -62,8 +60,6 @@ class ProjetController extends AbstractController
             'pages' => ceil($projets->getTotalItemCount() / $projets->getItemNumberPerPage()),
             'current_menu' => 'mixes'
         ]);
-
-
     }
 
     /**
@@ -75,9 +71,7 @@ class ProjetController extends AbstractController
      * @return RedirectResponse|Response
      */
     public function show(Projet $projet, string $slug, EntityManagerInterface $manager)
-
     {
-
         if ($projet->getSlug() !== $slug) {
             return $this->redirectToRoute('projet.show', [
                 'id' => $projet->getId(),
@@ -113,9 +107,7 @@ class ProjetController extends AbstractController
      * @return RedirectResponse|Response
      */
     public function download(Projet $projet, Request $request, DownloadHandler $downloadHandler)
-
     {
-
         $mp3filename = $projet->getMp3filename();
 
         $entityManager = $this->getDoctrine()->getManager();
@@ -136,8 +128,5 @@ class ProjetController extends AbstractController
         $entityManager->flush();
 
         return $downloadHandler->downloadObject($projet, $fileField = 'mp3File');
-
-
     }
-
 }

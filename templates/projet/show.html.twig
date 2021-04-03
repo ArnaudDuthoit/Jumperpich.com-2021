@@ -9,7 +9,7 @@
     <meta property="og:title" content="{{ projet.title }}"/>
     <meta property="og:description"
           content="♬ Click for Tracklist & Download ♬"/>
-    <meta property="fb:app_id" content="858188235026427" />
+    <meta property="fb:app_id" content="858188235026427"/>
     <meta property="og:image"
           content="https://jumperpich.com{{ vich_uploader_asset(projet, 'imageFile') }}"/>
 {% endblock %}
@@ -71,6 +71,7 @@
             </div>
 
             {% if projet.soundcloud is not null or projet.ytblink is not null %}
+
             <div class="container my-4 py-4">
 
                 <h6><abbr>STREAM</abbr></h6>
@@ -96,14 +97,15 @@
                     </div>
                 </div>
 
-                <h6><abbr>{% trans %}Lecteur intégré{% endtrans %}</abbr></h6>
+                {% endif %}
 
-                <div class="my-4 pt-4">
+                {% if projet.iframeSoundcloud %}
 
-                    {% if projet.iframeSoundcloud %}
+                    <h6><abbr>{% trans %}Lecteur intégré{% endtrans %}</abbr></h6>
+
+                    <div class="my-4 pt-4">
                         {{ projet.iframeSoundcloud | raw }}
-                    {% endif %}
-                </div>
+                    </div>
 
                 {% endif %}
 
