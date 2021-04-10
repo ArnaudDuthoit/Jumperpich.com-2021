@@ -103,12 +103,6 @@
     "egulias/email-validator": {
         "version": "2.1.7"
     },
-    "fig/link-util": {
-        "version": "1.0.0"
-    },
-    "friendsofphp/proxy-manager-lts": {
-        "version": "v1.0.3"
-    },
     "google/recaptcha": {
         "version": "1.1",
         "recipe": {
@@ -117,24 +111,6 @@
             "version": "1.1",
             "ref": "d087df3e087f50da3955f2def05079380da5894b"
         }
-    },
-    "gregwar/captcha": {
-        "version": "v1.1.7"
-    },
-    "gregwar/captcha-bundle": {
-        "version": "v2.0.6"
-    },
-    "illuminate/collections": {
-        "version": "v8.24.0"
-    },
-    "illuminate/contracts": {
-        "version": "v8.24.0"
-    },
-    "illuminate/macroable": {
-        "version": "v8.24.0"
-    },
-    "illuminate/support": {
-        "version": "v8.24.0"
     },
     "imagine/imagine": {
         "version": "v0.7.1"
@@ -147,12 +123,6 @@
     },
     "knplabs/knp-paginator-bundle": {
         "version": "v3.0.0"
-    },
-    "laminas/laminas-code": {
-        "version": "3.4.1"
-    },
-    "laminas/laminas-eventmanager": {
-        "version": "3.3.0"
     },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.1.1"
@@ -179,14 +149,11 @@
     "myclabs/deep-copy": {
         "version": "1.9.1"
     },
-    "nesbot/carbon": {
-        "version": "2.43.0"
-    },
     "nikic/php-parser": {
         "version": "v4.2.1"
     },
-    "pagerfanta/pagerfanta": {
-        "version": "v2.1.3"
+    "ocramius/proxy-manager": {
+        "version": "2.1.1"
     },
     "phar-io/manifest": {
         "version": "1.0.3"
@@ -195,34 +162,7 @@
         "version": "2.0.1"
     },
     "php": {
-        "version": "7.3"
-    },
-    "php-flasher/flasher": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-laravel": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-sweet-alert": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-sweet-alert-laravel": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-sweet-alert-symfony": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-symfony": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-toastr": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-toastr-laravel": {
-        "version": "v0.1.5"
-    },
-    "php-flasher/flasher-toastr-symfony": {
-        "version": "v0.1.5"
+        "version": "7.4"
     },
     "phpdocumentor/reflection-common": {
         "version": "1.0.1"
@@ -280,9 +220,6 @@
     },
     "psr/log": {
         "version": "1.1.0"
-    },
-    "psr/simple-cache": {
-        "version": "1.0.1"
     },
     "sebastian/code-unit-reverse-lookup": {
         "version": "1.0.1"
@@ -381,9 +318,6 @@
             "./config/bootstrap.php"
         ]
     },
-    "symfony/contracts": {
-        "version": "v1.0.2"
-    },
     "symfony/css-selector": {
         "version": "v4.2.5"
     },
@@ -406,7 +340,7 @@
         "version": "v4.2.5"
     },
     "symfony/deprecation-contracts": {
-        "version": "v2.1.3"
+        "version": "v2.2.0"
     },
     "symfony/doctrine-bridge": {
         "version": "v4.2.5"
@@ -490,7 +424,7 @@
             "ref": "15658c2a0176cda2e7dba66276a2030b52bd81b2"
         },
         "files": [
-            "./config/packages/mailer.yaml"
+            "config/packages/mailer.yaml"
         ]
     },
     "symfony/maker-bundle": {
@@ -503,7 +437,7 @@
         }
     },
     "symfony/mime": {
-        "version": "v5.2.1"
+        "version": "v4.4.18"
     },
     "symfony/monolog-bridge": {
         "version": "v4.2.5"
@@ -554,7 +488,7 @@
         "version": "v1.11.0"
     },
     "symfony/polyfill-intl-normalizer": {
-        "version": "v1.18.1"
+        "version": "v1.22.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "v1.11.0"
@@ -654,9 +588,6 @@
             "./config/packages/test/swiftmailer.yaml"
         ]
     },
-    "symfony/templating": {
-        "version": "v4.2.5"
-    },
     "symfony/test-pack": {
         "version": "v1.0.5"
     },
@@ -733,22 +664,18 @@
         ]
     },
     "symfony/webpack-encore-bundle": {
-        "version": "1.9",
+        "version": "1.0",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "1.9",
-            "ref": "579d8de06df2ceb34d39e84e84c0c051b9b5ac68"
+            "version": "1.0",
+            "ref": "7b6180725839c090cd8dbd069a3947b0dca1bae0"
         },
         "files": [
-            "./assets/app.js",
-            "./assets/bootstrap.js",
-            "./assets/controllers.json",
-            "./assets/controllers/hello_controller.js",
-            "./assets/styles/app.css",
+            "./assets/css/app.css",
+            "./assets/js/app.js",
             "./config/packages/assets.yaml",
             "./config/packages/prod/webpack_encore.yaml",
-            "./config/packages/test/webpack_encore.yaml",
             "./config/packages/webpack_encore.yaml",
             "./package.json",
             "./webpack.config.js"
@@ -766,7 +693,7 @@
             "ref": "97c1627c0384534997ae1047b93be517ca16de43"
         },
         "files": [
-            "./config/packages/reset_password.yaml"
+            "config/packages/reset_password.yaml"
         ]
     },
     "theseer/tokenizer": {
@@ -787,10 +714,13 @@
             "./config/packages/vich_uploader.yaml"
         ]
     },
-    "voku/portable-ascii": {
-        "version": "1.5.6"
-    },
     "webmozart/assert": {
         "version": "1.4.0"
+    },
+    "zendframework/zend-code": {
+        "version": "3.3.1"
+    },
+    "zendframework/zend-eventmanager": {
+        "version": "3.2.1"
     }
 }

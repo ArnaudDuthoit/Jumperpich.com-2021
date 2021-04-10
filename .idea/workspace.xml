@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb7d831-f7e2-4703-a132-8273ecfc4f6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/build/0.6349dda9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/build/app.7eaa4865.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/build/app.d42f0265.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.php_cs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.php_cs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/MixesCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProjetController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProjetController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/mentions.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/mentions.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/update.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/projet/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/0.94acb76e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.020748d7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/app.55665091.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/bundles/easyadmin/app.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/bundles/easyadmin/app.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/projet/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/projet/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,13 +239,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Jumperpich.com\templates\home" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\Jumperpich.com\public\pictures\icons" />
       <recent name="C:\wamp64\www\Jumperpich.com\public\pictures" />
       <recent name="C:\wamp64\www\Jumperpich.com\src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\Jumperpich.com\templates\home" />
     </key>
   </component>
   <component name="RunManager">
@@ -323,7 +333,8 @@
       <workItem from="1617439577661" duration="7000" />
       <workItem from="1617453751152" duration="6635000" />
       <workItem from="1617460931796" duration="15067000" />
-      <workItem from="1617480475393" duration="2078000" />
+      <workItem from="1617480475393" duration="2201000" />
+      <workItem from="1618066574732" duration="5257000" />
     </task>
     <task id="LOCAL-00001" summary="Upgrade EasyAdmin 2 vers Easy Admin 3">
       <created>1617383422880</created>
@@ -346,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617477432673</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Feature : Ajout d'un lien pour aller visiter un mix directement dans le crud admin">
+      <created>1617482686696</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617482686696</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +381,8 @@
     <MESSAGE value="Upgrade EasyAdmin 2 vers Easy Admin 3" />
     <MESSAGE value="Fix : Admin CRUD&#10;Update entité Projet" />
     <MESSAGE value="Fix : Admin CRUD auto sort du plus récent au plus ancien&#10;Fix : Admin CRUD set User connecté à l'ajout d'un mix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix : Admin CRUD auto sort du plus récent au plus ancien&#10;Fix : Admin CRUD set User connecté à l'ajout d'un mix" />
+    <MESSAGE value="Feature : Ajout d'un lien pour aller visiter un mix directement dans le crud admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : Ajout d'un lien pour aller visiter un mix directement dans le crud admin" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
