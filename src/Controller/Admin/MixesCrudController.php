@@ -70,7 +70,6 @@ class MixesCrudController extends AbstractCrudController
         return $actions
             ->setPermission(Action::NEW, 'ROLE_ADMIN')
             ->setPermission(Action::EDIT, 'ROLE_ADMIN')
-            ->disable(Action::DELETE)
             ->add(Crud::PAGE_INDEX, $detailMix)
             ->add(Crud::PAGE_INDEX, $voirMix);
     }
